@@ -39,8 +39,7 @@
 
   @include mobile {
    background-color: $color-white;
-   box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
-   
+   box-shadow: 0 3px 6px rgba(0, 0, 0, .16); 
    display: none;
    flex-direction: column;
    left: 0;
@@ -48,7 +47,6 @@
    position: absolute;
    top: 95px;
    width: 100%;
-
 
    .t-nav__element {
     padding: 0;
@@ -70,10 +68,10 @@
    @include mobile {
     &:checked {
 
-     //A ~ B wybiera wszystkie B następujące po A
      ~.t-header__nav {
       display: flex;
      }
+     //A ~ B wybiera wszystkie B następujące po A
 
      ~.t-menu__toggle {
       transform: rotate(90deg);
@@ -118,9 +116,9 @@
      margin-bottom: 0;
     }
 
-    .t-menu__line :hover{
+    .t-menu__line :hover {
      cursor: pointer;
-   }
+    }
    }
 
    @include mobile {

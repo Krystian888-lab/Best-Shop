@@ -1,0 +1,21 @@
+// Breakpoint mixin
+$bp-notebook: '1352px';
+$bp-tablet: '1024px';
+$bp-mobile: '792px';
+
+// Kolory
+$color-black: #000000;
+$color-green: #55DFB4;
+$color-grey: #A5A5A5;
+$color-grey-light: #F7F7F7;
+$color-blue: #08A6E4;
+$color-blue-shadow: rgba(7, 172, 230, .16);
+$color-red: #FB3B64;
+$color-white: #FFF;
+
+// Siatka
+$grid-base: 10px;
+$gutter: $grid-base * 1.5; // bazowy odstęp między kolumnami
+
+// Zaokroglenia
+$border-radius: $grid-base * .5;

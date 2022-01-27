@@ -1,0 +1,131 @@
+.t-header {
+ box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
+ height: 70px;
+
+ &__container {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: space-around;
+ }
+
+ .t-nav {
+  &__element {
+   padding: 0 26px;
+
+   &:last-child {
+    padding-right: 0;
+   }
+  }
+
+  &__link {
+   border-bottom: 4px solid transparent;
+   color: $color-grey;
+   font-size: $font-size-7* 1.1;
+   font-weight: 700;
+   letter-spacing: $letter-spacing-primary;
+   padding: 28px 18px 22px;
+   text-transform: uppercase;
+
+   &:hover {
+    border-bottom-color: $color-blue;
+    color: $color-black;
+   }
+  }
+ }
+
+ &__nav {
+  display: flex;
+
+  @include mobile {
+   background-color: $color-white;
+   box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
+   
+   display: none;
+   flex-direction: column;
+   left: 0;
+   padding-bottom: 20px;
+   position: absolute;
+   top: 95px;
+   width: 100%;
+
+
+   .t-nav__element {
+    padding: 0;
+   }
+
+   .t-nav__link {
+    display: block;
+    padding: 14px 20px;
+   }
+  }
+ }
+
+ .t-menu {
+   &__btn {
+   display: none;
+   opacity: 0;
+   position: absolute;
+
+   @include mobile {
+    &:checked {
+
+     //A ~ B wybiera wszystkie B następujące po A
+     ~.t-header__nav {
+      display: flex;
+     }
+
+     ~.t-menu__toggle {
+      transform: rotate(90deg);
+
+      .t-menu__line {
+
+       &:nth-child(1) {
+        transform: translateY(15px) rotate(45deg);
+        transform-origin: right;
+        width: 35px;
+       }
+
+       &:nth-child(2) {
+        opacity: 0;
+        transition: none;
+        transition-delay: 0.3s;
+       }
+
+       &:nth-child(3) {
+        transform-origin: right;
+        transform: translateY(-15px) rotate(-45deg);
+        width: 35px;
+       }
+      }
+     }
+    }
+   }
+  }
+
+  &__toggle {
+   display: none;
+
+   .t-menu__line {
+    background-color: $color-blue;
+    display: block;
+    height: 5px;
+    margin: 8px auto;
+    transition: all 0.3s ease-in-out;
+    width: 50px;
+
+    &:last-child {
+     margin-bottom: 0;
+    }
+
+    .t-menu__line :hover{
+     cursor: pointer;
+   }
+   }
+
+   @include mobile {
+    display: block;
+   }
+  }
+ }
+}

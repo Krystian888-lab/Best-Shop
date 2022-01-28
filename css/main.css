@@ -390,11 +390,63 @@ h2 {
   }
 }
 
+.btn {
+  border: none;
+  border-radius: 35px;
+  color: white;
+  display: inline-block;
+  font-weight: bold;
+  padding: 16px 65px;
+}
+.btn--main {
+  border-radius: 35px;
+  box-shadow: 3px 10px 14px rgba(7, 172, 230, 0.16);
+  background: radial-gradient(closest-side, #04e9e9, #08A6E4);
+}
+.btn--main:hover {
+  background: radial-gradient(closest-side, #08A6E4, #04e9e9);
+  box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.16);
+}
+.btn--icon {
+  padding: 22px 155px;
+}
+
 .c-logo {
   color: #08A6E4;
   font-family: "Raleway", sans-serif;
   font-size: 2rem;
   font-weight: 300;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+.banner__content {
+  margin-top: 50px;
+  padding-top: 50px;
+}
+@media (max-width: 792px) {
+  .banner__content {
+    margin-top: 50px;
+    padding-top: 50px;
+  }
+}
+.banner__title {
+  font-family: "Raleway", sans-serif;
+  font-size: 3rem;
+  margin: 10px;
+  padding: 10px;
+}
+.banner__text {
+  margin: 10px;
+  padding: 10px;
+}
+@media (max-width: 792px) {
+  .banner__text {
+    padding: 0 70px;
+  }
 }
 
 .t-header {
@@ -500,7 +552,7 @@ h2 {
   }
 }
 
-.u-blue {
-  color: #08A6E4;
+.u-text-center {
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */

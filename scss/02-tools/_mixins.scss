@@ -1,17 +1,17 @@
 @mixin notebook {
- @media (max-width: #{$bp-notebook}) {
+ @media ( max-width: #{ $bp-notebook } ) {
   @content;
  }
 }
 
 @mixin tablet {
-  @media (max-width: #{$bp-tablet}) {
+  @media ( max-width: #{ $bp-tablet } ) {
    @content;
   }
  }
 
 @mixin mobile {
- @media (max-width: #{$bp-mobile}) {
+ @media ( max-width: #{ $bp-mobile } ) {
   @content;
  }
 }

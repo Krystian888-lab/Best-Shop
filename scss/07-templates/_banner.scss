@@ -1,34 +1,55 @@
-.banner {
- // align-items: center;
+.t-banner {
  display: flex;
+ flex-direction: column;
  justify-content: center;
  overflow: hidden;
-
+ 
  &__content {
   margin-top: 50px;
   padding-top: 50px;
-
+  
   @include mobile {
    margin-top: 50px;
    padding-top: 50px;
   }
  }
-
-  &__title {
-   font-family: $font-raleway;
-   font-size: $font-size-1;
-   margin: 10px;
-   padding: 10px;
+ 
+ &__title {
+  font-family: $font-raleway;
+  font-size: $font-size-1;
+  margin: 10px;
+  padding: 10px;
+ }
+ 
+ &__text {
+  margin: 9px;
+  padding: 9px;
+  
+  @include mobile {
+   padding-left: 70px;
+   padding-right: 70px;
   }
-
-  &__text {
-   // margin-top: 20px;
-   // margin-bottom: 38px;
-   margin: 10px;
-   padding: 10px;
-
-   @include mobile {
-    padding: 0 70px;
+ }
+ 
+ .t-banner__image {
+  background-image: url( '../../assets/Background.png' );
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 450px;
+  width: 100%;
+  
+  @include mobile {
+   width: 220%;
+   transform: translateX( -27% );
+  }
+ }
+ 
+ @include mobile {
+  .btn {
+   display: block;
+   margin: 15px; 
+   padding: 16px;
   }
   }
-}
+ }

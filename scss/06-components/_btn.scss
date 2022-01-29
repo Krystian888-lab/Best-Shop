@@ -1,24 +1,24 @@
 .btn {
  border: none;
  border-radius: $border-radius;
- color: white;
+ color: $color-white;
  display: inline-block;
  font-weight: bold;
  padding: 16px 65px;
 
  &--main {
-  
   border-radius: $border-radius;
-  box-shadow: 3px 10px 14px $color-blue-shadow;
+  box-shadow: 5px 10px 14px $color-blue-shadow;
+ }
+ 
+ 
+ &--icon {
+  padding: 26px 157px;
   background: radial-gradient(closest-side, $color-blue-fresh, $color-blue);
  }
  
- &--main:hover {
+ &--icon:hover {
   background: radial-gradient(closest-side,  $color-blue, $color-blue-fresh);
-  box-shadow: 5px 10px 14px $color-blue-shadow;
- }
- &--icon {
-  padding: 22px 155px;
  }
 
 }

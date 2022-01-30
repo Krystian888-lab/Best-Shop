@@ -25,7 +25,6 @@
    flex-direction: column;
    margin-bottom: 50px;
    margin-top: 35px;
-   // margin: 35px auto 50px;
    }
   }
   
@@ -36,7 +35,6 @@
    font-family: $font-raleway;
    justify-content: flex-start;
    max-width: 160px;
-   text-align: center;
 
    @include mobile {
     margin-bottom:  35px;
@@ -109,9 +107,9 @@
 
  &__vessel {
   border-radius: 50%;
-  width: 63px;
   height: 63px;
   position: relative;
+  width: 63px;
  }
 
  &__img {
@@ -119,9 +117,9 @@
  }
 
  &__quantity {
-  font-size: 1.25rem;
+  font-size: $font-size-4;
   font-weight: 800;
-  letter-spacing: 0.1875rem;
+  letter-spacing: $letter-spacing-secondary;
   margin-top: 13px;
  }
 

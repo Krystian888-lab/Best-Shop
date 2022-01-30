@@ -422,6 +422,97 @@ h2 {
   font-weight: 300;
 }
 
+.t-advantages {
+  background-color: #F7F7F7;
+  padding: 100px 0;
+}
+@media (max-width: 1024px) {
+  .t-advantages {
+    padding: 50px 0;
+  }
+}
+.t-advantages__possessor {
+  padding: 0 100px;
+}
+@media (max-width: 1024px) {
+  .t-advantages__possessor {
+    padding: 0 15px;
+  }
+}
+.t-advantages__aside {
+  align-items: flex-end;
+  background-color: #FFFFFF;
+  border: 1px solid #E8E9ED;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 37px;
+}
+@media (max-width: 1024px) {
+  .t-advantages__aside {
+    align-items: center;
+    flex-direction: column-reverse !important;
+    padding: 0 20px !important;
+  }
+}
+.t-advantages__aside--device {
+  --accent-color: #FB3B64;
+}
+.t-advantages__aside--device .t-advantages__picture {
+  margin-right: 117px;
+  margin-bottom: 38px;
+}
+@media (max-width: 1024px) {
+  .t-advantages__aside--device .t-advantages__picture {
+    margin: 40px 0 0;
+  }
+}
+.t-advantages__aside--device .t-advantages__picture .t-advantages__picture--img {
+  background-image: url("../../assets/Macbook.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 198px;
+  width: 350px;
+}
+.t-advantages__aside--device .t-advantages__picture::before {
+  content: "";
+  width: 180px;
+  height: 180px;
+  background-color: var(--accent-color);
+  display: block;
+  border-radius: 40px;
+  position: absolute;
+  right: 0;
+  top: -40px;
+  transform: rotate(45deg);
+}
+@media (max-width: 1024px) {
+  .t-advantages__aside--device .t-advantages__picture::before {
+    width: 90px;
+    height: 90px;
+    right: -10px;
+    top: -30px;
+  }
+}
+.t-advantages__text {
+  box-sizing: content-box;
+  max-width: 416px;
+  margin: 20px;
+  text-align: left;
+}
+.t-advantages__title {
+  margin-bottom: 30px;
+}
+.t-advantages__variety {
+  line-height: 1.375rem;
+}
+.t-advantages__variety--line {
+  margin-top: 30px;
+  height: 2px;
+  width: 100%;
+  background-color: #FB3B64;
+}
+
 .t-banner {
   display: flex;
   flex-direction: column;
@@ -512,7 +603,6 @@ h2 {
   font-family: "Raleway", sans-serif;
   justify-content: flex-start;
   max-width: 160px;
-  text-align: center;
 }
 @media (max-width: 792px) {
   .t-collection__aside {
@@ -569,9 +659,9 @@ h2 {
 }
 .t-collection__vessel {
   border-radius: 50%;
-  width: 63px;
   height: 63px;
   position: relative;
+  width: 63px;
 }
 .t-collection__img {
   position: absolute;
@@ -579,7 +669,7 @@ h2 {
 .t-collection__quantity {
   font-size: 1.25rem;
   font-weight: 800;
-  letter-spacing: 0.1875rem;
+  letter-spacing: 3px;
   margin-top: 13px;
 }
 .t-collection__variety {

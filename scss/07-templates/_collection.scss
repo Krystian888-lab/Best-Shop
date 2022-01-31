@@ -3,8 +3,8 @@
  padding-top: 8px;
 
  @include mobile {
-  margin-top: 25px;
-  padding-top: 25px;
+  margin-top: 5px;
+  padding-top: 5px;
  }
 
  &__title {
@@ -17,7 +17,6 @@
   justify-content: space-between;
   margin-bottom: 100px;
   margin-top: 120px;
-  // margin: 100px auto 120px;
   max-width: 800px;
 
   @include mobile {

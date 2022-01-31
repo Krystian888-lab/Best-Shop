@@ -409,10 +409,10 @@ h2 {
 }
 .btn--icon {
   padding: 26px 157px;
-  background: radial-gradient(closest-side, #04e9e9, #08A6E4);
+  background: linear-gradient(#04e9e9, #08A6E4);
 }
 .btn--icon:hover {
-  background: radial-gradient(closest-side, #08A6E4, #04e9e9);
+  background: linear-gradient(#08A6E4, #04e9e9);
 }
 
 .c-logo {
@@ -455,62 +455,92 @@ h2 {
     padding: 0 20px !important;
   }
 }
-.t-advantages__aside--device {
-  --accent-color: #FB3B64;
-}
 .t-advantages__aside--device .t-advantages__picture {
-  margin-right: 117px;
   margin-bottom: 38px;
+  margin-right: 117px;
+  position: relative;
 }
 @media (max-width: 1024px) {
   .t-advantages__aside--device .t-advantages__picture {
     margin: 40px 0 0;
   }
 }
-.t-advantages__aside--device .t-advantages__picture .t-advantages__picture--img {
-  background-image: url("../../assets/Macbook.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 198px;
-  width: 350px;
-}
 .t-advantages__aside--device .t-advantages__picture::before {
   content: "";
-  width: 180px;
-  height: 180px;
-  background-color: var(--accent-color);
-  display: block;
+  background-color: #FB3B64;
   border-radius: 40px;
+  display: block;
+  height: 180px;
   position: absolute;
   right: 0;
-  top: -40px;
   transform: rotate(45deg);
+  top: -40px;
+  width: 180px;
+  transition-timing-function: ease-out;
+  transition-duration: 250ms;
+  transform: rotate(45deg);
+  transition-delay: 0.04s;
 }
 @media (max-width: 1024px) {
   .t-advantages__aside--device .t-advantages__picture::before {
-    width: 90px;
     height: 90px;
     right: -10px;
     top: -30px;
+    width: 90px;
+  }
+}
+.t-advantages__aside--device .t-advantages__picture:hover::before {
+  left: 0px;
+  top: -35px;
+  transform: scale(1.1, 1.1);
+  transition-timing-function: ease-out;
+  transition-duration: 250ms;
+  transition-delay: 0.04s;
+}
+.t-advantages__aside--device .t-advantages__picture--img {
+  background-image: url("../../assets/Macbook.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 218px;
+  width: 386px;
+  position: relative;
+  z-index: 2;
+}
+@media (max-width: 1024px) {
+  .t-advantages__aside--device .t-advantages__picture--img {
+    height: 109px;
+    width: 192px;
   }
 }
 .t-advantages__text {
   box-sizing: content-box;
   max-width: 416px;
-  margin: 20px;
+  margin: 91px 36px;
   text-align: left;
 }
-.t-advantages__title {
+.t-advantages__text .t-advantages__title {
   margin-bottom: 30px;
 }
-.t-advantages__variety {
+.t-advantages__text .t-advantages__variety {
   line-height: 1.375rem;
 }
-.t-advantages__variety--line {
-  margin-top: 30px;
-  height: 2px;
-  width: 100%;
+.t-advantages__text .t-advantages__variety--line {
   background-color: #FB3B64;
+  height: 4px;
+  margin-top: 30px;
+  transition-duration: 1.5s;
+  transition-delay: 0.4s;
+  transition-timing-function: ease-in-out;
+  width: 80px;
+}
+.t-advantages__text .t-advantages__variety--line:hover {
+  background-color: #FB3B64;
+  width: 80%;
+}
+@media (max-width: 1024px) {
+  .t-advantages__text {
+    margin: 30px 0;
+  }
 }
 
 .t-banner {
@@ -555,6 +585,7 @@ h2 {
 }
 @media (max-width: 792px) {
   .t-banner .t-banner__image {
+    height: 267px;
     width: 220%;
     transform: translateX(-27%);
   }
@@ -573,8 +604,8 @@ h2 {
 }
 @media (max-width: 792px) {
   .t-collection {
-    margin-top: 25px;
-    padding-top: 25px;
+    margin-top: 5px;
+    padding-top: 5px;
   }
 }
 .t-collection__title {

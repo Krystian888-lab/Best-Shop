@@ -14,11 +14,11 @@
  
  &--icon {
   padding: 26px 157px;
-  background: radial-gradient(closest-side, $color-blue-fresh, $color-blue);
+  background: linear-gradient($color-blue-fresh, $color-blue);
  }
  
  &--icon:hover {
-  background: radial-gradient(closest-side,  $color-blue, $color-blue-fresh);
+  background: linear-gradient($color-blue, $color-blue-fresh);
  }
 
 }

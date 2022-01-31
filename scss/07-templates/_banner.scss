@@ -40,6 +40,7 @@
   width: 100%;
   
   @include mobile {
+   height: 267px;
    width: 220%;
    transform: translateX( -27% );
   }

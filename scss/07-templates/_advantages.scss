@@ -30,11 +30,11 @@
   }
   
   &--device {
-   
+  // laptop 
+  --accent-color: #{ $color-red };
    .t-advantages__picture {
     margin-bottom: 38px;
     margin-right: 117px;
-    position: relative;
 
     @include tablet {
      margin: 40px 0 0;
@@ -42,7 +42,7 @@
 
     &::before {
      content: "";
-     background-color: $color-red;
+     background-color: var( --accent-color );
      border-radius: 40px;
      display: block;
      height: 180px;
@@ -89,41 +89,157 @@
     }
    }
   }
- }
+  // mobile
+  &--mobile {
+   --accent-color: #{ $color-blue };
+   flex-direction: row-reverse;
+   padding: 0 20px 0 70px;
+   
+   .t-advantages__picture {
+    
+    @include tablet {
+     margin-top: 30px;
+    }
 
- &__text {
-  box-sizing: content-box;
-  max-width: 416px;
-  margin: 91px 36px;
-  text-align: left;
+    &::before {
+     content: "";
+     background: var( --accent-color );
+     border-radius: 50%;
+     display: block;
+     height: 320px;
+     left: 0;
+     position: absolute;
+     top: -20px;
+     width: 320px;
 
-  .t-advantages__title {  
-    margin-bottom: 30px;
+     @include tablet {
+      height: 131px;
+      top: -15px;
+      width: 131px;
+     }
+    }
+    
+    &--img {
+     background-image: url( '../../assets/iPhone.png' );
+     background-repeat: no-repeat;
+     background-size: contain;
+     height: 328px;
+     width: 426px;
+     position: relative;
+     z-index: 2;
+     
+     @include tablet {
+      height: 135px;
+      width: 175px;
+     }
+    }
+   }
   }
+   
+   // trumpet
+   &--trumpet {
+    --accent-color: #{ $color-green };
+    display: flex;
+    justify-content: space-between;
+
+    @include tablet {
+     flex-direction: column;
+    }
+
+    > div {
+     margin-bottom: 0;
+    }
+    
+    .t-advantages__content {
+     max-height: 370px;
+     max-width: 620px;
+
+     @include tablet {
+      max-width: none;
+     }
+
+     .t-advantages__text {
+      max-width: none;
+     }
+    }
+
+    .t-advantages__picture {
+     align-items: center;
+     background-color: var(--accent-color);
+     display: flex;
+     justify-content: center;
+     height: 370px;
+     width: 440px;
+
+     @include tablet {
+      height: 195px;
+      margin-left: 0;
+      vertical-align: middle;
+      width: auto;
+     }
+
+     &--img {
+      background-image: url( '../../assets/Trumpet.png' );
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: 207px;
+      width: 295px;
+      position: relative;    
+      
+      @include tablet {
+       margin-top: 55px
+      }  
+     }
+    }
+   }
+   // &--content {
+   //  max-width: none;
+   // }
+  }
+  
+  &__text {
+   box-sizing: content-box;
+   max-width: 416px;
+   margin: 91px 36px;
+
+   @include tablet {
+    margin: 0;
+    max-width: none;
+   }
+   
+   .t-advantages__title {  
+    margin-bottom: 30px;
+   }
 
   .t-advantages__variety {
-   line-height: 1.375rem;
+   line-height: $line-height-base;
  
    &--line {
-    background-color: $color-red;
+    background-color: var( --accent-color );
     height: 4px;
     margin-top: 30px;
     transition-duration: 1.5s;
     transition-delay: 0.4s;
     transition-timing-function: ease-in-out;
-    width: 80px; 
+    width: 80px;
+    
+    @include tablet {
+     display: none;
+    }
    }
    
    &--line:hover {
-    background-color: $color-red;
+    background-color: var( --accent-color );
     width: 80%;
    }
   }
   @include tablet {
    margin: 30px 0;
-   }
+  }
+
  }
-
-
- 
+ .t-advantages__picture {
+  position: relative;
+  z-index: 2;
+ }
 }

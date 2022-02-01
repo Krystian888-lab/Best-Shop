@@ -455,10 +455,12 @@ h2 {
     padding: 0 20px !important;
   }
 }
+.t-advantages__aside--device {
+  --accent-color: #FB3B64;
+}
 .t-advantages__aside--device .t-advantages__picture {
   margin-bottom: 38px;
   margin-right: 117px;
-  position: relative;
 }
 @media (max-width: 1024px) {
   .t-advantages__aside--device .t-advantages__picture {
@@ -467,7 +469,7 @@ h2 {
 }
 .t-advantages__aside--device .t-advantages__picture::before {
   content: "";
-  background-color: #FB3B64;
+  background-color: var(--accent-color);
   border-radius: 40px;
   display: block;
   height: 180px;
@@ -512,20 +514,122 @@ h2 {
     width: 192px;
   }
 }
+.t-advantages__aside--mobile {
+  --accent-color: #08A6E4;
+  flex-direction: row-reverse;
+  padding: 0 20px 0 70px;
+}
+@media (max-width: 1024px) {
+  .t-advantages__aside--mobile .t-advantages__picture {
+    margin-top: 30px;
+  }
+}
+.t-advantages__aside--mobile .t-advantages__picture::before {
+  content: "";
+  background: var(--accent-color);
+  border-radius: 50%;
+  display: block;
+  height: 320px;
+  left: 0;
+  position: absolute;
+  top: -20px;
+  width: 320px;
+}
+@media (max-width: 1024px) {
+  .t-advantages__aside--mobile .t-advantages__picture::before {
+    height: 131px;
+    top: -15px;
+    width: 131px;
+  }
+}
+.t-advantages__aside--mobile .t-advantages__picture--img {
+  background-image: url("../../assets/iPhone.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 328px;
+  width: 426px;
+  position: relative;
+  z-index: 2;
+}
+@media (max-width: 1024px) {
+  .t-advantages__aside--mobile .t-advantages__picture--img {
+    height: 135px;
+    width: 175px;
+  }
+}
+.t-advantages__aside--trumpet {
+  --accent-color: #55DFB4;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 1024px) {
+  .t-advantages__aside--trumpet {
+    flex-direction: column;
+  }
+}
+.t-advantages__aside--trumpet > div {
+  margin-bottom: 0;
+}
+.t-advantages__aside--trumpet .t-advantages__content {
+  max-height: 370px;
+  max-width: 620px;
+}
+@media (max-width: 1024px) {
+  .t-advantages__aside--trumpet .t-advantages__content {
+    max-width: none;
+  }
+}
+.t-advantages__aside--trumpet .t-advantages__content .t-advantages__text {
+  max-width: none;
+}
+.t-advantages__aside--trumpet .t-advantages__picture {
+  align-items: center;
+  background-color: var(--accent-color);
+  display: flex;
+  justify-content: center;
+  height: 370px;
+  width: 440px;
+}
+@media (max-width: 1024px) {
+  .t-advantages__aside--trumpet .t-advantages__picture {
+    height: 195px;
+    margin-left: 0;
+    vertical-align: middle;
+    width: auto;
+  }
+}
+.t-advantages__aside--trumpet .t-advantages__picture--img {
+  background-image: url("../../assets/Trumpet.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 207px;
+  width: 295px;
+  position: relative;
+}
+@media (max-width: 1024px) {
+  .t-advantages__aside--trumpet .t-advantages__picture--img {
+    margin-top: 55px;
+  }
+}
 .t-advantages__text {
   box-sizing: content-box;
   max-width: 416px;
   margin: 91px 36px;
-  text-align: left;
+}
+@media (max-width: 1024px) {
+  .t-advantages__text {
+    margin: 0;
+    max-width: none;
+  }
 }
 .t-advantages__text .t-advantages__title {
   margin-bottom: 30px;
 }
 .t-advantages__text .t-advantages__variety {
-  line-height: 1.375rem;
+  line-height: 1.375;
 }
 .t-advantages__text .t-advantages__variety--line {
-  background-color: #FB3B64;
+  background-color: var(--accent-color);
   height: 4px;
   margin-top: 30px;
   transition-duration: 1.5s;
@@ -533,14 +637,23 @@ h2 {
   transition-timing-function: ease-in-out;
   width: 80px;
 }
+@media (max-width: 1024px) {
+  .t-advantages__text .t-advantages__variety--line {
+    display: none;
+  }
+}
 .t-advantages__text .t-advantages__variety--line:hover {
-  background-color: #FB3B64;
+  background-color: var(--accent-color);
   width: 80%;
 }
 @media (max-width: 1024px) {
   .t-advantages__text {
     margin: 30px 0;
   }
+}
+.t-advantages .t-advantages__picture {
+  position: relative;
+  z-index: 2;
 }
 
 .t-banner {
@@ -813,5 +926,9 @@ h2 {
 
 .u-text-center {
   text-align: center;
+}
+
+.u-text-left {
+  text-align: left;
 }
 /*# sourceMappingURL=main.css.map */

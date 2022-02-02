@@ -1,0 +1,143 @@
+.t-pricing {
+ align-items: center;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ margin-bottom: 100px;
+ margin-top: 100px;
+
+ @include mobile {
+  margin-bottom: 50px;
+  margin-top: 50px;
+ }
+
+ &__packets {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+
+  @include mobile {
+   flex-direction:  column;
+   width: 100%;
+  }
+ }
+
+ &__packet {
+  align-items: center;
+  border: 1px solid var( --accent-color );
+  border-radius: $border-radius4;
+  display: flex;
+  flex-direction: column;
+  width: 370px;
+ 
+  @include mobile {
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+   max-width: 370px;
+   margin-bottom: 50px;
+   padding: 25px 10px 0 10px;
+   width: 100%;
+
+   &:last-child {
+    margin-bottom: 0;
+   }
+  }
+
+  .btn {
+   background-color: var(--accent-color);
+   bottom: -25px;
+   font-size: 0.8125rem;
+   position: relative;
+  }
+
+// basic
+  &--basic {
+   --accent-color: #{ $color-red };
+
+    .t-pricing__cost {
+     margin-bottom: 30px;
+     
+     @include mobile {
+      margin-bottom: 0;
+     }     
+    }
+   }
+
+   &--professional {
+    --accent-color: #{ $color-blue };
+    box-shadow: 5px 10px 27px $color-blue-shadow;
+    margin: 0 40px;
+    width: 405px;
+
+    @include mobile {
+     margin: 0 0 50px 0;
+     max-width: 400px;
+     width: 100%;
+    }
+
+    .t-pricing {
+     &__set {
+      font-size: $font-size-6;
+     }
+
+     &__unit {
+      margin-bottom: 25px;
+     }
+    }
+   }
+   
+   &--premium {
+    --accent-color: #{ $color-green };
+   }
+  }
+
+   &__params {
+    margin-bottom: 60px;
+    margin-top: 34px;
+    text-align: center;
+
+    @include mobile {
+     margin: 0;
+     width: 50%;
+    }
+   }
+
+   &__set {
+    font-family: $font-raleway;
+    font-size: $font-size-4;
+    font-weight: 700;
+   }
+
+   &__cost {
+    color: var( --accent-color );
+    font-family: $font-open-sans;
+    font-size: $font-size-5;
+    font-weight: 300;
+    margin-top: 25px;
+   }
+
+   &__moderate {
+    font-family: $font-raleway;
+    font-size: $font-size-7;
+    font-weight: 700;
+    margin-top: 15px;
+    text-align: center;
+   }
+
+   &__units {
+    text-align: center;
+
+    @include tablet {
+     width: 50%;
+     text-align: left;
+    }
+   }
+
+   &__unit {
+    font-size: $font-size-8;
+   }
+
+ }
+ 

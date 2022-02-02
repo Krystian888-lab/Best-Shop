@@ -397,7 +397,7 @@ h2 {
 
 .btn {
   border: none;
-  border-radius: 35px;
+  border-radius: 23px;
   color: #FFFFFF;
   display: inline-block;
   font-weight: bold;
@@ -405,14 +405,14 @@ h2 {
 }
 .btn--main {
   border-radius: 35px;
-  box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.16);
+  box-shadow: 5px 10px 14px #07ACE629;
 }
 .btn--icon {
   padding: 26px 157px;
-  background: linear-gradient(#04e9e9, #08A6E4);
+  background: linear-gradient(#04E9E9, #08A6E4);
 }
 .btn--icon:hover {
-  background: linear-gradient(#08A6E4, #04e9e9);
+  background: linear-gradient(#08A6E4, #04E9E9);
 }
 
 .c-logo {
@@ -495,17 +495,17 @@ h2 {
   left: 0px;
   top: -35px;
   transform: scale(1.1, 1.1);
-  transition-timing-function: ease-out;
-  transition-duration: 250ms;
   transition-delay: 0.04s;
+  transition-duration: 250ms;
+  transition-timing-function: ease-out;
 }
 .t-advantages__aside--device .t-advantages__picture--img {
   background-image: url("../../assets/Macbook.png");
   background-repeat: no-repeat;
   background-size: contain;
   height: 218px;
-  width: 386px;
   position: relative;
+  width: 386px;
   z-index: 2;
 }
 @media (max-width: 1024px) {
@@ -585,6 +585,7 @@ h2 {
 .t-advantages__aside--trumpet .t-advantages__picture {
   align-items: center;
   background-color: var(--accent-color);
+  border-radius: 5px;
   display: flex;
   justify-content: center;
   height: 370px;
@@ -603,8 +604,8 @@ h2 {
   background-repeat: no-repeat;
   background-size: contain;
   height: 207px;
-  width: 295px;
   position: relative;
+  width: 295px;
 }
 @media (max-width: 1024px) {
   .t-advantages__aside--trumpet .t-advantages__picture--img {
@@ -613,8 +614,8 @@ h2 {
 }
 .t-advantages__text {
   box-sizing: content-box;
-  max-width: 416px;
   margin: 91px 36px;
+  max-width: 416px;
 }
 @media (max-width: 1024px) {
   .t-advantages__text {
@@ -632,8 +633,8 @@ h2 {
   background-color: var(--accent-color);
   height: 4px;
   margin-top: 30px;
-  transition-duration: 1.5s;
   transition-delay: 0.4s;
+  transition-duration: 1.5s;
   transition-timing-function: ease-in-out;
   width: 80px;
 }
@@ -840,7 +841,7 @@ h2 {
 .t-header .t-nav__link {
   border-bottom: 4px solid transparent;
   color: #A5A5A5;
-  font-size: 0.6875rem;
+  font-size: 0.825rem;
   font-weight: 700;
   letter-spacing: 3.28px;
   padding: 28px 18px 22px;
@@ -922,6 +923,136 @@ h2 {
   .t-header .t-menu__toggle {
     display: block;
   }
+}
+
+.t-pricing {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+@media (max-width: 792px) {
+  .t-pricing {
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+}
+.t-pricing__packets {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+@media (max-width: 792px) {
+  .t-pricing__packets {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+.t-pricing__packet {
+  align-items: center;
+  border: 1px solid var(--accent-color);
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  width: 370px;
+}
+@media (max-width: 792px) {
+  .t-pricing__packet {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 370px;
+    margin-bottom: 50px;
+    padding: 25px 10px 0 10px;
+    width: 100%;
+  }
+  .t-pricing__packet:last-child {
+    margin-bottom: 0;
+  }
+}
+.t-pricing__packet .btn {
+  background-color: var(--accent-color);
+  bottom: -25px;
+  font-size: 0.8125rem;
+  position: relative;
+}
+.t-pricing__packet--basic {
+  --accent-color: #FB3B64;
+}
+.t-pricing__packet--basic .t-pricing__cost {
+  margin-bottom: 30px;
+}
+@media (max-width: 792px) {
+  .t-pricing__packet--basic .t-pricing__cost {
+    margin-bottom: 0;
+  }
+}
+.t-pricing__packet--professional {
+  --accent-color: #08A6E4;
+  box-shadow: 5px 10px 27px #07ACE629;
+  margin: 0 40px;
+  width: 405px;
+}
+@media (max-width: 792px) {
+  .t-pricing__packet--professional {
+    margin: 0 0 50px 0;
+    max-width: 400px;
+    width: 100%;
+  }
+}
+.t-pricing__packet--professional .t-pricing__set {
+  font-size: 1rem, 3125;
+}
+.t-pricing__packet--professional .t-pricing__unit {
+  margin-bottom: 25px;
+}
+.t-pricing__packet--premium {
+  --accent-color: #55DFB4;
+}
+.t-pricing__params {
+  margin-bottom: 60px;
+  margin-top: 34px;
+  text-align: center;
+}
+@media (max-width: 792px) {
+  .t-pricing__params {
+    margin: 0;
+    width: 50%;
+  }
+}
+.t-pricing__set {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.t-pricing__cost {
+  color: var(--accent-color);
+  font-family: "Open Sans", sans-serif;
+  font-size: 2.875rem;
+  font-weight: 300;
+  margin-top: 25px;
+}
+.t-pricing__moderate {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin-top: 15px;
+  text-align: center;
+}
+.t-pricing__units {
+  text-align: center;
+}
+@media (max-width: 1024px) {
+  .t-pricing__units {
+    width: 50%;
+    text-align: left;
+  }
+}
+.t-pricing__unit {
+  font-size: calc($font-size-base - 2px);
 }
 
 .u-text-center {

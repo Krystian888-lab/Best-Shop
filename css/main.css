@@ -415,6 +415,13 @@ h2 {
   background: linear-gradient(#08A6E4, #04E9E9);
 }
 
+.t-pricing__packet .btn {
+  background-color: var(--accent-color);
+  bottom: -25px;
+  font-size: 0.8125rem;
+  position: relative;
+}
+
 .c-logo {
   color: #08A6E4;
   font-family: "Raleway", sans-serif;
@@ -822,6 +829,92 @@ h2 {
   margin-top: 19px;
 }
 
+.t-contact {
+  display: flex;
+  justify-content: space-around;
+  padding: 80px 100px 100px;
+}
+@media (max-width: 1024px) {
+  .t-contact {
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 15px;
+  }
+}
+.t-contact__catalog {
+  max-width: 440px;
+  width: 50%;
+}
+@media (max-width: 1024px) {
+  .t-contact__catalog {
+    width: 100%;
+  }
+}
+.t-contact__title {
+  font-size: 3rem;
+  padding-bottom: 22px;
+}
+.t-contact__text {
+  font-size: 1rem;
+  line-height: 1.375;
+  margin-bottom: 42px;
+}
+@media (max-width: 1024px) {
+  .t-contact__text {
+    margin: 5px 0 35px;
+  }
+}
+.t-contact__log {
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+}
+@media (max-width: 1024px) {
+  .t-contact__log {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+.t-contact__log--email {
+  align-items: center;
+  color: #A5A5A5;
+  display: inline-flex;
+  margin-right: 10px;
+  font-weight: 500;
+}
+@media (max-width: 1024px) {
+  .t-contact__log--email {
+    margin-bottom: 10px;
+  }
+}
+.t-contact__log--email::before {
+  background-image: url("../../assets/Mail Icon.svg");
+  content: "";
+  display: inline-block;
+  height: 27px;
+  margin-right: 10px;
+  width: 27px;
+}
+.t-contact__log--phone {
+  align-items: center;
+  color: #A5A5A5;
+  display: inline-flex;
+  font-weight: 500;
+}
+@media (max-width: 1024px) {
+  .t-contact__log--phone {
+    margin-bottom: 10px;
+  }
+}
+.t-contact__log--phone::before {
+  background-image: url("../../assets/Phone Icon.svg");
+  content: "";
+  display: inline-block;
+  height: 27px;
+  margin-right: 10px;
+  width: 27px;
+}
+
 .t-header {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   height: 70px;
@@ -933,7 +1026,7 @@ h2 {
   margin-bottom: 100px;
   margin-top: 100px;
 }
-@media (max-width: 792px) {
+@media (max-width: 1024px) {
   .t-pricing {
     margin-bottom: 50px;
     margin-top: 50px;
@@ -945,7 +1038,7 @@ h2 {
   justify-content: center;
   margin-top: 50px;
 }
-@media (max-width: 792px) {
+@media (max-width: 1024px) {
   .t-pricing__packets {
     flex-direction: column;
     width: 100%;
@@ -957,15 +1050,15 @@ h2 {
   border-radius: 18px;
   display: flex;
   flex-direction: column;
-  width: 370px;
+  width: 372px;
 }
-@media (max-width: 792px) {
+@media (max-width: 1024px) {
   .t-pricing__packet {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 370px;
-    margin-bottom: 50px;
+    max-width: 375px;
+    margin-bottom: 54px;
     padding: 25px 10px 0 10px;
     width: 100%;
   }
@@ -973,19 +1066,13 @@ h2 {
     margin-bottom: 0;
   }
 }
-.t-pricing__packet .btn {
-  background-color: var(--accent-color);
-  bottom: -25px;
-  font-size: 0.8125rem;
-  position: relative;
-}
 .t-pricing__packet--basic {
   --accent-color: #FB3B64;
 }
 .t-pricing__packet--basic .t-pricing__cost {
   margin-bottom: 30px;
 }
-@media (max-width: 792px) {
+@media (max-width: 1024px) {
   .t-pricing__packet--basic .t-pricing__cost {
     margin-bottom: 0;
   }
@@ -996,15 +1083,15 @@ h2 {
   margin: 0 40px;
   width: 405px;
 }
-@media (max-width: 792px) {
+@media (max-width: 1024px) {
   .t-pricing__packet--professional {
-    margin: 0 0 50px 0;
-    max-width: 400px;
+    margin-bottom: 50px;
+    max-width: 405px;
     width: 100%;
   }
 }
 .t-pricing__packet--professional .t-pricing__set {
-  font-size: 1rem, 3125;
+  font-size: 1.3125rem;
 }
 .t-pricing__packet--professional .t-pricing__unit {
   margin-bottom: 25px;
@@ -1013,11 +1100,10 @@ h2 {
   --accent-color: #55DFB4;
 }
 .t-pricing__params {
-  margin-bottom: 60px;
+  margin-bottom: 61px;
   margin-top: 34px;
-  text-align: center;
 }
-@media (max-width: 792px) {
+@media (max-width: 1024px) {
   .t-pricing__params {
     margin: 0;
     width: 50%;
@@ -1037,7 +1123,7 @@ h2 {
 }
 .t-pricing__moderate {
   font-family: "Raleway", sans-serif;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   font-weight: 700;
   margin-top: 15px;
   text-align: center;
@@ -1047,12 +1133,29 @@ h2 {
 }
 @media (max-width: 1024px) {
   .t-pricing__units {
-    width: 50%;
     text-align: left;
+    width: 50%;
   }
 }
 .t-pricing__unit {
-  font-size: calc($font-size-base - 2px);
+  font-size: 0.875rem;
+  margin-bottom: 20px;
+}
+@media (max-width: 1024px) {
+  .t-pricing__unit:last-child {
+    margin-bottom: 0;
+  }
+}
+.t-pricing__unit::before {
+  background-image: url("../../assets/Checkmark-1.svg");
+  content: "";
+  display: inline-block;
+  height: 11px;
+  margin-right: 10px;
+  width: 11px;
+}
+.t-pricing__unit--no::before {
+  background-image: url("../../assets/Close.svg");
 }
 
 .u-text-center {

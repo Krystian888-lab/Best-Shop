@@ -1,0 +1,75 @@
+.c-form {
+ display: flex;
+ flex-direction: column;
+
+ @include tablet {
+  margin-top: 20px;
+ }
+
+ &__field {
+  display: flex;
+  flex-direction: column;
+
+  &:first-of-type {
+   margin-bottom: 42px;
+  }
+ }
+
+ &__label {
+  color: $color-blue;
+  font-size: $font-size-10;
+  font-weight: 700;
+  letter-spacing: $letter-spacing-primary;
+  text-transform: uppercase;
+ }
+
+ &__input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid $color-grey;
+  line-height: $line-height-mid;
+ }
+
+ &__agreement {
+  margin-top: 30px;
+
+  &--checkbox {
+  display: flex;
+  margin-bottom: 12px;
+
+  input {
+   appearance: none;
+   border: 1px solid $color-grey-dark;
+   border-radius: $border-radius6;
+   cursor: pointer;
+   flex-shrink: 0;
+   height: 25px;
+   position: relative;
+   width: 25px;
+
+   &:checked::after {
+    background-image: url( '../../assets/Checkmark.svg' );
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+
+    content: "";
+    height: 25px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 25px;
+    }
+   }
+  }
+
+  &--approval {
+   margin: 0 10px;
+   font-size: $font-size-7;
+   color: $color-grey;
+   line-height: 17px;
+  }
+ }
+}

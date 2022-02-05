@@ -395,7 +395,7 @@ h2 {
   margin-right: auto;
 }
 
-.btn {
+.c-btn {
   border: none;
   border-radius: 23px;
   color: #FFFFFF;
@@ -403,23 +403,101 @@ h2 {
   font-weight: bold;
   padding: 16px 65px;
 }
-.btn--main {
+.c-btn--main {
   border-radius: 35px;
   box-shadow: 5px 10px 14px #07ACE629;
 }
-.btn--icon {
+.c-btn--icon {
   padding: 26px 157px;
   background: linear-gradient(#04E9E9, #08A6E4);
 }
-.btn--icon:hover {
+.c-btn--icon:hover {
+  background: linear-gradient(#08A6E4, #04E9E9);
+}
+.c-btn--form {
+  align-self: flex-end;
+  background: linear-gradient(#04E9E9, #08A6E4);
+  font-size: 13px;
+  padding: 20px 97px;
+}
+.c-btn--form:hover {
   background: linear-gradient(#08A6E4, #04E9E9);
 }
 
-.t-pricing__packet .btn {
+.t-pricing__packet .c-btn {
   background-color: var(--accent-color);
   bottom: -25px;
   font-size: 0.8125rem;
   position: relative;
+}
+
+.c-form {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 1024px) {
+  .c-form {
+    margin-top: 20px;
+  }
+}
+.c-form__field {
+  display: flex;
+  flex-direction: column;
+}
+.c-form__field:first-of-type {
+  margin-bottom: 42px;
+}
+.c-form__label {
+  color: #08A6E4;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 3.28px;
+  text-transform: uppercase;
+}
+.c-form__input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #A5A5A5;
+  line-height: 2.625;
+}
+.c-form__agreement {
+  margin-top: 30px;
+}
+.c-form__agreement--checkbox {
+  display: flex;
+  margin-bottom: 12px;
+}
+.c-form__agreement--checkbox input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 1px solid #95989A;
+  border-radius: 4px;
+  cursor: pointer;
+  flex-shrink: 0;
+  height: 25px;
+  position: relative;
+  width: 25px;
+}
+.c-form__agreement--checkbox input:checked::after {
+  background-image: url("../../assets/Checkmark.svg");
+  background-position: center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  content: "";
+  height: 25px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 25px;
+}
+.c-form__agreement--approval {
+  margin: 0 10px;
+  font-size: 0.75rem;
+  color: #A5A5A5;
+  line-height: 17px;
 }
 
 .c-logo {

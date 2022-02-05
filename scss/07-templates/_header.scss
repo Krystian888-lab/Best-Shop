@@ -1,8 +1,10 @@
 .t-header {
  box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
  height: 70px;
+ // position: fixed;
+ // width: 100%;
 
- &__container {
+ &__site {
   align-items: center;
   display: flex;
   height: 100%;
@@ -71,7 +73,6 @@
      ~.t-header__nav {
       display: flex;
      }
-     //A ~ B wybiera wszystkie B następujące po A
 
      ~.t-menu__toggle {
       transform: rotate(90deg);

@@ -1,0 +1,46 @@
+.t-footer {
+ box-shadow: 0 -5px 40px rgba(0, 0, 0, .16);
+ padding: 20px;
+ 
+ 
+
+ &__site {
+   align-items: center;
+   display: flex;
+   justify-content: space-between;
+   padding: 0 115px;
+ }
+
+ &__info {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+ }
+
+ &__copy {
+  color: $color-grey;
+  font-size: $font-size-10;
+  line-height: $line-height-average;
+  margin-top: 6px;
+ }
+
+ &__social {
+  
+  &--twitter {
+   background-image: url( '../../assets/Twitter.svg' );
+   content: "";
+   display: inline-block;
+   height: 24px;
+   margin-right: 20px;
+   width: 24px;
+  }
+
+  &--facebook {
+   background-image: url( '../../assets/Facebook.svg' );
+   content: "";
+   display: inline-block;
+   height: 24px;
+   width: 24px;
+  }
+ }
+}

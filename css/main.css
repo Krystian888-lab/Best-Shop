@@ -993,11 +993,48 @@ h2 {
   width: 27px;
 }
 
+.t-footer {
+  box-shadow: 0 -5px 40px rgba(0, 0, 0, 0.16);
+  padding: 20px;
+}
+.t-footer__site {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 115px;
+}
+.t-footer__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.t-footer__copy {
+  color: #A5A5A5;
+  font-size: 0.6875rem;
+  line-height: 1.5rem;
+  margin-top: 6px;
+}
+.t-footer__social--twitter {
+  background-image: url("../../assets/Twitter.svg");
+  content: "";
+  display: inline-block;
+  height: 24px;
+  margin-right: 20px;
+  width: 24px;
+}
+.t-footer__social--facebook {
+  background-image: url("../../assets/Facebook.svg");
+  content: "";
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+}
+
 .t-header {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   height: 70px;
 }
-.t-header__container {
+.t-header__site {
   align-items: center;
   display: flex;
   height: 100%;

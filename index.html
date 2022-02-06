@@ -192,6 +192,79 @@
   </div>
  </section>
 
+ 
+ <!-- kalkulator -->
+ <section class="t-calculator o-container">
+  <h2 class="t-calculator__title u-text-center">Calculate how much you’ll pay</h2>
+  <div class="t-calculator__container o-margin-auto">
+
+   <form class="c-form-cal">
+    
+     <input class="c-form-cal__input" id="products" type="number"  min="1" step="1" placeholder="Products quantity" />
+     <input class="c-form-cal__input" id="orders" type="number"  min="1" step="1" placeholder="Estimated orders in month" />
+
+    <div class="c-form-cal__select" id="package">
+     <div class="c-form-cal__set">Choose package
+
+      <nav class="c-catalog__release">
+       <span data-value="basic">Basic</span>
+       <span data-value="professional">Professional</span>
+       <span data-value="premium">Premium</span>
+      </nav>
+     </div>
+
+     <label class="c-form__checkbox">
+      <input type="checkbox" id="accounting" />
+      <p class="c-form__checkbox--text">Accounting</p>
+     </label>
+
+     <label class="c-form__checkbox">
+      <input type="checkbox" id="terminal" />
+      <p class="c-form__checkbox--text">Rental of a payment terminal</p>
+     </label>
+
+    </div> 
+   </form>
+
+   <div class="t-calculator__compute">
+    
+    <nav class="t-calculator__catalog" data-id="products">
+     <span class="t-file__name">Products</span>
+     <span class="t-file__weight">20 * $0.5</span>
+     <span class="t-file__price">$10</span>
+    </nav>
+
+    <nav class="t-calculator__catalog" data-id="orders">
+     <span class="t-file__name">Orders</span>
+     <span class="t-file__weight">20 * $0.5</span>
+     <span class="t-file__price">$10</span>
+    </nav>
+
+    <nav class="t-calculator__catalog" data-id="package">
+     <span class="t-file__name">Package</span>
+     <span class="t-file__weight">20 * $0.5</span>
+     <span class="t-file__price">$10</span>
+    </nav>
+
+    <nav class="t-calculator__catalog" data-id="accounting">
+     <span class="t-file__name">Accounting</span>
+     <span class="t-file__price">$10</span>
+    </nav>
+
+    <nav class="t-calculator__catalog" data-id="terminal">
+     <span class="t-file__name">Terminal</span>
+     <span class="t-file__price">$10</span>
+    </nav>
+
+    <div class="t-calculator__total" id="total-price">
+     <span>Total</span>
+     <span class="t-calculator__total--price">$700</span>
+    </div>
+
+   </div>
+  </div>
+ </section>
+
 
  <section class="t-contact o-container">
 
@@ -223,7 +296,6 @@
 
      <label class="c-form__agreement--checkbox">
       <input type="checkbox">
-      <span class="c-form__agreement--picture"></span>
 
       <p class="c-form__agreement--approval">
        I hereby give consent for my personal data included in my application to be processed

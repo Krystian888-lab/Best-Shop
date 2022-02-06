@@ -1,0 +1,19 @@
+.t-calculator {
+ background-color: $color-grey-light;
+ padding: 80px 0;
+
+ @include tablet {
+  padding: 30px 15px;
+ }
+
+ &__container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+  margin-top: 52px ;
+
+  @include tablet {
+   display: block;
+  }
+ }
+}

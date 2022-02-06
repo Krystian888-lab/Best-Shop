@@ -431,6 +431,58 @@ h2 {
   position: relative;
 }
 
+.c-form-cal {
+  margin-right: 20px;
+  width: 440px;
+}
+@media (max-width: 1024px) {
+  .c-form-cal {
+    margin-right: 0;
+    width: 100%;
+  }
+}
+.c-form-cal__input, .c-form-cal__set {
+  background-color: #FFFFFF;
+  border-radius: 6px;
+  border: 1px solid #08A6E4;
+  box-shadow: 0px 3px 6px #07ACE629;
+  color: #A5A5A5;
+  font-size: 0.8125rem;
+  line-height: 1em;
+  margin-bottom: 20px;
+  padding: 11px 20px;
+  width: 100%;
+}
+.c-form-cal__input::-moz-placeholder, .c-form-cal__set::-moz-placeholder {
+  color: #A5A5A5;
+}
+.c-form-cal__input:-ms-input-placeholder, .c-form-cal__set:-ms-input-placeholder {
+  color: #A5A5A5;
+}
+.c-form-cal__input::placeholder, .c-form-cal__set::placeholder {
+  color: #A5A5A5;
+}
+.c-form-cal__select {
+  position: relative;
+}
+.c-form-cal .c-form-cal__set {
+  cursor: pointer;
+  height: 40px;
+  padding: 13px 20px;
+  position: relative;
+  vertical-align: middle;
+}
+.c-form-cal .c-form-cal__set::after {
+  content: "";
+  background-image: url("../../assets/Arrow.svg");
+  display: block;
+  height: 22px;
+  right: 14px;
+  position: absolute;
+  top: 9px;
+  width: 22px;
+}
+
 .c-form {
   display: flex;
   flex-direction: column;
@@ -905,6 +957,27 @@ h2 {
 .t-collection__variety {
   color: #A5A5A5;
   margin-top: 19px;
+}
+
+.t-calculator {
+  background-color: #F7F7F7;
+  padding: 80px 0;
+}
+@media (max-width: 1024px) {
+  .t-calculator {
+    padding: 30px 15px;
+  }
+}
+.t-calculator__container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+  margin-top: 52px;
+}
+@media (max-width: 1024px) {
+  .t-calculator__container {
+    display: block;
+  }
 }
 
 .t-contact {

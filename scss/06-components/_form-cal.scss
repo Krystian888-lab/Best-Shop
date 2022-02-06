@@ -1,0 +1,61 @@
+.c-form-cal {
+  margin-right: 20px;
+  width: 440px;
+  // width: 50%;
+
+  @include tablet {
+   margin-right: 0;
+   width: 100%;
+  }
+
+  &__input, &__set {
+    background-color: $color-white;
+    border-radius: 6px;
+    border: 1px solid $color-blue;
+    box-shadow: 0px 3px 6px $color-blue-shadow;
+    color: $color-grey;
+    font-size: 0.8125rem;
+    line-height: 1em;
+    margin-bottom: 20px;
+    padding: 11px 20px;
+    width: 100%;
+    
+    &::placeholder {
+     color: $color-grey;
+    }
+   }
+   
+   &__select {
+    position: relative;
+   }
+   
+   .c-form-cal__set {
+    cursor: pointer;
+   height: 40px;
+   padding: 13px 20px;
+   position: relative;
+   vertical-align: middle;
+   
+   &::after {
+    content: "";
+    background-image: url("../../assets/Arrow.svg");
+    display: block;
+    height: 22px;
+    right: 14px;
+    position: absolute;
+    top: 9px;
+    width: 22px;
+   }
+  }
+  // .c-catalog__release {
+  //  background-color: white;
+  //  border: 1px solid $color-redish;
+  //  border-radius: 6px;
+  //  display: none;
+  //  overflow: hidden;
+  //  position: absolute;
+  //  width: 100%;
+  //  z-index: 1;
+  // }
+ }
+ 

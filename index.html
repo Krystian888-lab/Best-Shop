@@ -194,9 +194,9 @@
 
  
  <!-- kalkulator -->
- <section class="t-calculator o-container">
-  <h2 class="t-calculator__title u-text-center">Calculate how much you’ll pay</h2>
-  <div class="t-calculator__container o-margin-auto">
+ <!-- <section class="t-cal o-container">
+  <h2 class="t-ca__title u-text-center">Calculate how much you’ll pay</h2>
+  <div class="t-cal__container o-margin-auto">
 
    <form class="c-form-cal">
     
@@ -213,12 +213,12 @@
       </nav>
      </div>
 
-     <label class="c-form__checkbox">
+     <label class="c-form__checkbox--agreement">
       <input type="checkbox" id="accounting" />
       <p class="c-form__checkbox--text">Accounting</p>
      </label>
 
-     <label class="c-form__checkbox">
+     <label class="c-form__checkbox--agreement">
       <input type="checkbox" id="terminal" />
       <p class="c-form__checkbox--text">Rental of a payment terminal</p>
      </label>
@@ -226,39 +226,124 @@
     </div> 
    </form>
 
-   <div class="t-calculator__compute">
+   <div class="t-cal__compute">
     
-    <nav class="t-calculator__catalog" data-id="products">
-     <span class="t-file__name">Products</span>
-     <span class="t-file__weight">20 * $0.5</span>
-     <span class="t-file__price">$10</span>
-    </nav>
+    <nav class="t-directory">
+    <span class="t-cal__catalog" data-id="products">
+     <a class="t-file__name">Products</a>
+     <a class="t-file__weight"></a>
+     <a class="t-file__price"></a>
+    </span>
 
-    <nav class="t-calculator__catalog" data-id="orders">
-     <span class="t-file__name">Orders</span>
-     <span class="t-file__weight">20 * $0.5</span>
-     <span class="t-file__price">$10</span>
-    </nav>
+    <span class="t-cal__catalog" data-id="orders">
+     <a class="t-file__name">Orders</a>
+     <a class="t-file__weight">20 * $0.5</a>
+     <a class="t-file__price">$10</a>
+    </span>
 
-    <nav class="t-calculator__catalog" data-id="package">
-     <span class="t-file__name">Package</span>
-     <span class="t-file__weight">20 * $0.5</span>
-     <span class="t-file__price">$10</span>
-    </nav>
+    <span class="t-cal__catalog" data-id="package">
+     <a class="t-file__name">Package</a>
+     <a class="t-file__weight">20 * $0.5</a>
+     <a class="t-file__price">$10</a>
+    </span>
 
-    <nav class="t-calculator__catalog" data-id="accounting">
-     <span class="t-file__name">Accounting</span>
-     <span class="t-file__price">$10</span>
-    </nav>
+    <span class="t-cal__catalog" data-id="accounting">
+     <a class="t-file__name">Accounting</a>
+     <a class="t-file__price">$10</a>
+    </span>
 
-    <nav class="t-calculator__catalog" data-id="terminal">
-     <span class="t-file__name">Terminal</span>
-     <span class="t-file__price">$10</span>
-    </nav>
+    <span class="t-cal__catalog" data-id="terminal">
+     <a class="t-file__name">Terminal</a>
+     <a class="t-file__price">$10</a>
+    </span>
 
-    <div class="t-calculator__total" id="total-price">
+   </nav>
+    <div class="t-cal__total" id="total-price">
      <span>Total</span>
-     <span class="t-calculator__total--price">$700</span>
+     <span class="t-cal__total--price">$700</span>
+    </div>
+
+   </div>
+  </div>
+ </section> -->
+
+ <section class="calc">
+  <h2>Calculate how much you’ll pay</h2>
+  <div class="calc__columns">
+
+   <!-- formularz -->
+   <form class="calc__form">
+
+    <div class="calc__input">
+     <input type="number" class="form__input" id="products" min="1" step="1" placeholder="Products quantity" />
+    </div>  
+
+    <div class="calc__input">
+     <input type="number" class="form__input" id="orders" min="1" step="1" placeholder="Estimated orders in month" />
+    </div>
+
+    <div class="calc__select" id="package" data-value="">
+     <div class="select__input">
+      Choose package
+     </div>
+
+     <ul class="select__dropdown">
+      <li data-value="basic">Basic</li>
+      <li data-value="professional">Professional</li>
+      <li data-value="premium">Premium</li>
+     </ul>
+    </div>
+
+    <label class="form__checkbox">
+     <input type="checkbox" id="accounting" />
+     <span class="checkbox"></span>
+     <p class="consent__text">Accounting</p>
+    </label>
+    
+    <label class="form__checkbox">
+     <input type="checkbox" id="terminal" />
+     <span class="checkbox"></span>
+     <p class="consent__text">Rental of a payment terminal</p>
+    </label>
+   </form>
+
+   <!-- obliczenie -->
+   <div class="calc__summary">
+    <ul>
+
+     <li class="list__item" data-id="products">
+      <span class="item__type">Products</span>
+      <span class="item__calc">20 * $0.5</span>
+      <span class="item__price">$10</span>
+     </li>
+
+     <li class="list__item" data-id="orders">
+      <span class="item__type">Orders</span>
+      <span class="item__calc">20 * $0.5</span>
+      <span class="item__price">$10</span>
+     </li>
+
+     <li class="list__item" data-id="package">
+      <span class="item__type">Package</span>
+      <span class="item__calc">Premium</span>
+      <span class="item__price">$10</span>
+     </li>
+
+     <li class="list__item" data-id="accounting">
+      <span class="item__type">Accounting</span>
+      <span class="item__price">$10</span>
+     </1li>
+
+     <li class="list__item" data-id="terminal">
+      <span class="item__type">Terminal</span>
+      <span class="item__price">$10</span>
+     </li>
+
+    </ul>
+
+    <div class="summary__total" id="total-price">
+     <span>Total</span>
+     <span class="total__price">$700</span>
     </div>
 
    </div>
@@ -292,12 +377,12 @@
      <input class="c-form__input" type="email"  id="email">
     </div>
 
-    <div class="c-form__agreement">
+    <div class="c-form__checkbox">
 
-     <label class="c-form__agreement--checkbox">
+     <label class="c-form__checkbox--agreement">
       <input type="checkbox">
 
-      <p class="c-form__agreement--approval">
+      <p class="c-form__checkbox--text">
        I hereby give consent for my personal data included in my application to be processed
        for the purposes of the recruitment process under the European Parliament’s and Council of the European Union
        Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal
@@ -327,6 +412,7 @@
    
   </div>
  </footer>
-
+ 
+ <script src="js/app.js"></script>
 </body>
 </html>

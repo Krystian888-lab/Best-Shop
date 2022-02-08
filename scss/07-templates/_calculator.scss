@@ -1,19 +1,75 @@
-.t-calculator {
- background-color: $color-grey-light;
- padding: 80px 0;
+// .t-cal {
+//  background-color: $color-grey-light;
+//  padding: 80px 0;
 
- @include tablet {
-  padding: 30px 15px;
- }
+//  @include tablet {
+//   padding: 30px 15px;
+//  }
 
- &__container {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 0;
-  margin-top: 52px ;
+//  &__container {
+//   display: flex;
+//   justify-content: center;
+//   margin-bottom: 0;
+//   margin-top: 52px ;
 
-  @include tablet {
-   display: block;
-  }
- }
-}
+//   @include tablet {
+//    display: block;
+//   }
+//  }
+
+//  &__compute {
+//   display: flex;
+//   flex-direction: column;
+//   margin-left: 20px;
+//   width: 440px;
+
+//   @include tablet {
+//    margin-left: 0;
+//    margin-top: 30px;
+//    width: 100%;
+//   }
+//  }
+
+//  &__catalog, 
+//  &__total {
+//    align-items: center;
+//    border-radius: 6px;
+//    box-shadow: 0px 3px 6px rgba(0, 0, 0, .16);
+//    color: $color-white;
+//    display: none;
+//    font-size: 0.875rem;
+//    justify-content: space-between;
+
+//    &.open {
+//     display: flex;
+//    }
+//  }
+
+//  &__total {
+//    align-self: flex-end;
+//    background-color: $color-blue;
+//    display: flex;
+//    margin-top: 22px;
+//    padding: 8px 20px;
+//    width: 50%;
+
+//    &--price {
+//     font-size: 1.25rem;
+//     font-weight: 700;
+//    }
+//  }
+
+//  &__catalog {
+//    background-color: $color-green;
+//    display: flex;
+//    margin-bottom: 8px;
+//    padding: 6px 20px;
+//  }
+
+//   .t-file {
+//    &__price {
+//     font-size: 1.125rem;
+//      font-weight: 700;
+//    }
+//   }
+// }

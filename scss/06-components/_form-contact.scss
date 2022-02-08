@@ -30,20 +30,23 @@
   line-height: $line-height-mid;
  }
 
- &__agreement {
+ &__checkbox {
   margin-top: 30px;
 
-  &--checkbox {
-  display: flex;
-  margin-bottom: 12px;
+  &--agreement {
+   // align-items: center;
+   display: flex;
+   margin-bottom: 12px;
 
   input {
    appearance: none;
+   background-color: $color-white;
    border: 1px solid $color-grey-dark;
    border-radius: $border-radius6;
    cursor: pointer;
    flex-shrink: 0;
    height: 25px;
+   margin: 0 10px;
    position: relative;
    width: 25px;
 
@@ -65,8 +68,8 @@
    }
   }
 
-  &--approval {
-   margin: 0 10px;
+  &--text {
+   // align-items: center;
    font-size: $font-size-7;
    color: $color-grey;
    line-height: 17px;

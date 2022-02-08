@@ -14,11 +14,11 @@ function Calculator( form, sumary ) {
  
  // Inputs / Select / Checkbox
  this.form = {
-  products: form.querySelector("#products"),
-  orders: form.querySelector("#orders"),
-  package: form.querySelector("#package"),
-  accounting: form.querySelector("#accounting"),
-  terminal: form.querySelector("#terminal")
+  products: form.querySelector( "#products" ),
+  orders: form.querySelector( "#orders" ),
+  package: form.querySelector( "#package" ),
+  accounting: form.querySelector( "#accounting" ),
+  terminal: form.querySelector( "#terminal" )
 };
 
 // Summary elements
@@ -99,7 +99,7 @@ Calculator.prototype.checkboxEvent = function ( el ) {
  const id = checkbox.id;
  const checked = el.currentTarget.checked;
 
- this.updateSummary( id, undefined, this.prices[id], function( item ) {
+ this.updateSummary( id, undefined, this.prices[ id ], function( item ) {
   if ( !checked ) {
    item.classList.remove( "open" );
   }
@@ -148,7 +148,7 @@ Calculator.prototype.updateTotal = function () {
   ? this.prices.terminal
   : 0;
 
-  this.summary.total.price.innerText = "$" + ( productSum + ordersSum + packagePrice + accounting + terminal );
+  this.summary.total.price.innerText = `$ ${productSum + ordersSum + packagePrice + accounting + terminal}`;
 
   this.summary.total.container.classList.add( "open" );
  } else {

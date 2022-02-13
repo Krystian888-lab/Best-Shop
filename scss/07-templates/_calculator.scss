@@ -1,75 +1,171 @@
-// .t-cal {
-//  background-color: $color-grey-light;
-//  padding: 80px 0;
+.calc {
+ background-color: $color-grey-light;
+ padding: 80px 0;
 
-//  @include tablet {
-//   padding: 30px 15px;
-//  }
+ @include tablet {
+  padding: 30px 15px;
+ }
 
-//  &__container {
-//   display: flex;
-//   justify-content: center;
-//   margin-bottom: 0;
-//   margin-top: 52px ;
+ h2 {
+  text-align: center;
+ }
 
-//   @include tablet {
-//    display: block;
-//   }
-//  }
+ &__columns {
+  display: flex;
+  max-width: 865px;
+  margin: 50px auto 0;
 
-//  &__compute {
-//   display: flex;
-//   flex-direction: column;
-//   margin-left: 20px;
-//   width: 440px;
+  @include tablet {
+   display: block;
+  }
+ }
 
-//   @include tablet {
-//    margin-left: 0;
-//    margin-top: 30px;
-//    width: 100%;
-//   }
-//  }
+ &__form {
+  margin-right: 20px;
+  width: 50%;
 
-//  &__catalog, 
-//  &__total {
-//    align-items: center;
-//    border-radius: 6px;
-//    box-shadow: 0px 3px 6px rgba(0, 0, 0, .16);
-//    color: $color-white;
-//    display: none;
-//    font-size: 0.875rem;
-//    justify-content: space-between;
+  @include tablet {
+   margin-right: 0;
+   width: 100%;
+  }
+ }
 
-//    &.open {
-//     display: flex;
-//    }
-//  }
 
-//  &__total {
-//    align-self: flex-end;
-//    background-color: $color-blue;
-//    display: flex;
-//    margin-top: 22px;
-//    padding: 8px 20px;
-//    width: 50%;
+ &__input input,
+ &__select .select__input {
+  background-color: $color-white;
+  border: 1px solid $color-blue;
+  border-radius: 6px;
+  box-shadow: 0px 3px 6px $color-blue-shadow;
+  color: $color-grey;
+  font-size: 0.8125rem;
+  line-height: 1em;
+  margin-bottom: 20px;
+  padding: 11px 20px;
+  width: 100%;
+ }
 
-//    &--price {
-//     font-size: 1.25rem;
-//     font-weight: 700;
-//    }
-//  }
+ &__input {
+  input {
+   &::placeholder {
+    color: $color-grey;
+   }
+  }
+ }
 
-//  &__catalog {
-//    background-color: $color-green;
-//    display: flex;
-//    margin-bottom: 8px;
-//    padding: 6px 20px;
-//  }
+ &__select {
+  position: relative;
 
-//   .t-file {
-//    &__price {
-//     font-size: 1.125rem;
-//      font-weight: 700;
-//    }
-//   }
-// }
+  .select__input {
+   cursor: pointer;
+   height: 40px;
+   padding: 13px 20px;
+   position: relative;
+   vertical-align: middle;
+
+   &::after {
+    content: "";
+    background-image: url("../assets/Arrow.svg");
+    display: block;
+    height: 22px;
+    right: 14px;
+    position: absolute;
+    top: 9px;
+    width: 22px;
+   }
+  }
+
+  .drop-down__menu {
+   background-color: white;
+   border: 1px solid $color-red;
+   border-radius: 6px;
+   display: none;
+   overflow: hidden;
+   position: absolute;
+   width: 100%;
+   z-index: 1;
+
+   li {
+    cursor: pointer;
+    font-size: 13px;
+    padding: 10px 20px;
+
+    &:hover {
+     background-color: $color-grey-light;
+    }
+   }
+  }
+
+
+  &.open {
+   .select__input::after {
+    transform: rotate(180deg);
+   }
+
+   .drop-down__menu {
+    display: block;
+   }
+  }
+ }
+
+ .form__checkbox {
+  .consent__text {
+   padding-top: 4px;
+  }
+ }
+
+ .t-com__compute {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  width: 50%;
+
+  @include tablet {
+   margin-left: 0;
+   margin-top: 30px;
+   width: 100%;
+  }
+
+  .t-com__closing,
+  .t-com__list {
+   align-items: center;
+   border-radius: 6px;
+   box-shadow: 0px 3px 6px rgba(0, 0, 0, .16);
+   color: $color-white;
+   display: none;
+   font-size: 0.875rem;
+   justify-content: space-between;
+
+   &.open {
+    display: flex;
+   }
+  }
+
+  .t-com__closing {
+   align-self: flex-end;
+   background-color: $color-blue;
+   margin-top: 22px;
+   padding: 8px 20px;
+   width: 50%;
+
+   .t-com__final-price {
+    font-size: 1.25rem;
+    font-weight: 700;
+   }
+  }
+
+  .t-com__list {
+   background-color: $color-green;
+   margin-bottom: 8px;
+   padding: 6px 20px;
+
+   
+   .t-file {
+    &__price {
+     font-size: 1.125rem;
+     font-weight: 700;
+    }
+   }
+  }
+ }
+}

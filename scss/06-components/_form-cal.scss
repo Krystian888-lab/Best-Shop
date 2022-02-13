@@ -1,4 +1,4 @@
-// .c-form-cal {
+// .c-form-c {
 //   margin-right: 20px;
 //   width: 440px;
 //   // width: 50%;
@@ -27,9 +27,9 @@
    
 //    &__select {
 //     position: relative;
-//    }
    
-//    .c-form-cal__set {
+   
+//    .c-form-c__set {
 //     cursor: pointer;
 //     height: 40px;
 //     padding: 13px 20px;
@@ -57,7 +57,7 @@
 //    width: 100%;
 //    z-index: 1;
 
-//    span {
+//    li {
 //     cursor: pointer;
 //     font-size: 13px;
 //     padding: 10px 20px;
@@ -69,13 +69,14 @@
 //   }
 
 //   &.open {
-//    .select__input::after {
+//    .c-form-c__set::after {
 //     transform: rotate(180deg);
 //    }
 
-//    .select__dropdown {
+//    .c-catalog__release {
 //     display: block;
 //    }
 //   }
 //  }
  
+// }

@@ -195,13 +195,13 @@
  
  <!-- kalkulator -->
  <!-- <section class="t-cal o-container">
-  <h2 class="t-ca__title u-text-center">Calculate how much you’ll pay</h2>
+  <h2 class="t-cal__title u-text-center">Calculate how much you’ll pay</h2>
   <div class="t-cal__container o-margin-auto">
 
-   <form class="c-form-cal">
+   <form class="c-form">
     
-     <input class="c-form-cal__input" id="products" type="number"  min="1" step="1" placeholder="Products quantity" />
-     <input class="c-form-cal__input" id="orders" type="number"  min="1" step="1" placeholder="Estimated orders in month" />
+     <input class="c-form__input" id="products" type="number"  min="1" step="1" placeholder="Products quantity" />
+     <input class="c-form__input" id="orders" type="number"  min="1" step="1" placeholder="Estimated orders in month" />
 
     <div class="c-form-cal__select" id="package">
      <div class="c-form-cal__set">Choose package
@@ -267,6 +267,10 @@
   </div>
  </section> -->
 
+ <!-- kalkulator -->
+
+
+ <!-- calc -->
  <section class="calc">
   <h2>Calculate how much you’ll pay</h2>
   <div class="calc__columns">
@@ -287,7 +291,7 @@
       Choose package
      </div>
 
-     <ul class="select__dropdown">
+     <ul class="drop-down__menu">
       <li data-value="basic">Basic</li>
       <li data-value="professional">Professional</li>
       <li data-value="premium">Premium</li>
@@ -307,43 +311,45 @@
     </label>
    </form>
 
+   
    <!-- obliczenie -->
-   <div class="calc__summary">
+   <div class="t-com__compute">
+    <!-- <div class="calc__summary"> -->
     <ul>
 
-     <li class="list__item" data-id="products">
-      <span class="item__type">Products</span>
-      <span class="item__calc">20 * $0.5</span>
-      <span class="item__price">$10</span>
+     <li class="t-com__list" data-id="products">
+      <a class="t-file__name">Products</a>
+      <a class="t-file__multi">20 * $0.5</a>
+      <a class="t-file__price">$10</a>
      </li>
 
-     <li class="list__item" data-id="orders">
-      <span class="item__type">Orders</span>
-      <span class="item__calc">20 * $0.5</span>
-      <span class="item__price">$10</span>
+     <li class="t-com__list" data-id="orders">
+      <a class="t-file__name">Orders</a>
+      <a class="t-file__multi">20 * $0.5</a>
+      <a class="t-file__price">$10</a>
      </li>
 
-     <li class="list__item" data-id="package">
-      <span class="item__type">Package</span>
-      <span class="item__calc">Premium</span>
-      <span class="item__price">$10</span>
+     <li class="t-com__list" data-id="package">
+      <a class="t-file__name">Package</a>
+      <a class="t-file__multi">Premium</a>
+      <a class="t-file__price">$10</a>
      </li>
 
-     <li class="list__item" data-id="accounting">
-      <span class="item__type">Accounting</span>
-      <span class="item__price">$10</span>
+     <li class="t-com__list" data-id="accounting">
+      <a class="t-file__name">Accounting</a>
+      <a class="t-file__price">$10</a>
      </1li>
 
-     <li class="list__item" data-id="terminal">
-      <span class="item__type">Terminal</span>
-      <span class="item__price">$10</span>
+     <li class="t-com__list" data-id="terminal">
+      <a class="t-file__name">Terminal</a>
+      <a class="t-file__price">$10</a>
      </li>
 
     </ul>
 
-    <div class="summary__total" id="total-price">
+    <div class="t-com__closing" id="total-price">
      <span>Total</span>
-     <span class="total__price">$700</span>
+     <span class="t-com__final-price">$700</span>
     </div>
 
    </div>

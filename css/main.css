@@ -477,7 +477,7 @@ h2 {
   cursor: pointer;
   flex-shrink: 0;
   height: 25px;
-  margin: 0 10px;
+  margin: 0 10px 0 0;
   position: relative;
   width: 25px;
 }
@@ -496,6 +496,7 @@ h2 {
   width: 25px;
 }
 .c-form__checkbox--text {
+  align-self: center;
   font-size: 0.75rem;
   color: #A5A5A5;
   line-height: 17px;
@@ -908,39 +909,36 @@ h2 {
   margin-top: 19px;
 }
 
-.calc {
+.c-com {
   background-color: #F7F7F7;
   padding: 80px 0;
 }
 @media (max-width: 1024px) {
-  .calc {
+  .c-com {
     padding: 30px 15px;
   }
 }
-.calc h2 {
-  text-align: center;
-}
-.calc__columns {
+.c-com__catalog {
   display: flex;
   max-width: 865px;
   margin: 50px auto 0;
 }
 @media (max-width: 1024px) {
-  .calc__columns {
+  .c-com__catalog {
     display: block;
   }
 }
-.calc__form {
+.c-com__form {
   margin-right: 20px;
   width: 50%;
 }
 @media (max-width: 1024px) {
-  .calc__form {
+  .c-com__form {
     margin-right: 0;
     width: 100%;
   }
 }
-.calc__input input, .calc__select .select__input {
+.c-com__input input, .c-com__select .c-set.select {
   background-color: #FFFFFF;
   border: 1px solid #08A6E4;
   border-radius: 6px;
@@ -952,26 +950,26 @@ h2 {
   padding: 11px 20px;
   width: 100%;
 }
-.calc__input input::-moz-placeholder {
+.c-com__input input::-moz-placeholder {
   color: #A5A5A5;
 }
-.calc__input input:-ms-input-placeholder {
+.c-com__input input:-ms-input-placeholder {
   color: #A5A5A5;
 }
-.calc__input input::placeholder {
+.c-com__input input::placeholder {
   color: #A5A5A5;
 }
-.calc__select {
+.c-com__select {
   position: relative;
 }
-.calc__select .select__input {
+.c-com__select .c-set.select {
   cursor: pointer;
   height: 40px;
   padding: 13px 20px;
   position: relative;
   vertical-align: middle;
 }
-.calc__select .select__input::after {
+.c-com__select .c-set.select::after {
   content: "";
   background-image: url("../assets/Arrow.svg");
   display: block;
@@ -981,8 +979,8 @@ h2 {
   top: 9px;
   width: 22px;
 }
-.calc__select .drop-down__menu {
-  background-color: white;
+.c-com__select .c-drop-down__menu {
+  background-color: #FFFFFF;
   border: 1px solid #FB3B64;
   border-radius: 6px;
   display: none;
@@ -991,38 +989,35 @@ h2 {
   width: 100%;
   z-index: 1;
 }
-.calc__select .drop-down__menu li {
+.c-com__select .c-drop-down__menu li {
   cursor: pointer;
-  font-size: 13px;
+  font-size: 0.8125rem;
   padding: 10px 20px;
 }
-.calc__select .drop-down__menu li:hover {
+.c-com__select .c-drop-down__menu li:hover {
   background-color: #F7F7F7;
 }
-.calc__select.open .select__input::after {
+.c-com__select.open .c-set ~ .select::after {
   transform: rotate(180deg);
 }
-.calc__select.open .drop-down__menu {
+.c-com__select.open .c-drop-down__menu {
   display: block;
 }
-.calc .form__checkbox .consent__text {
-  padding-top: 4px;
-}
-.calc .t-com__compute {
+.c-com .t-com__compute {
   display: flex;
   flex-direction: column;
   margin-left: 20px;
   width: 50%;
 }
 @media (max-width: 1024px) {
-  .calc .t-com__compute {
+  .c-com .t-com__compute {
     margin-left: 0;
     margin-top: 30px;
     width: 100%;
   }
 }
-.calc .t-com__compute .t-com__closing,
-.calc .t-com__compute .t-com__list {
+.c-com .t-com__compute .t-com__closing,
+.c-com .t-com__compute .t-com__list {
   align-items: center;
   border-radius: 6px;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
@@ -1031,27 +1026,27 @@ h2 {
   font-size: 0.875rem;
   justify-content: space-between;
 }
-.calc .t-com__compute .t-com__closing.open,
-.calc .t-com__compute .t-com__list.open {
+.c-com .t-com__compute .t-com__closing.open,
+.c-com .t-com__compute .t-com__list.open {
   display: flex;
 }
-.calc .t-com__compute .t-com__closing {
+.c-com .t-com__compute .t-com__closing {
   align-self: flex-end;
   background-color: #08A6E4;
   margin-top: 22px;
   padding: 8px 20px;
   width: 50%;
 }
-.calc .t-com__compute .t-com__closing .t-com__final-price {
+.c-com .t-com__compute .t-com__closing .t-com__final-price {
   font-size: 1.25rem;
   font-weight: 700;
 }
-.calc .t-com__compute .t-com__list {
+.c-com .t-com__compute .t-com__list {
   background-color: #55DFB4;
   margin-bottom: 8px;
   padding: 6px 20px;
 }
-.calc .t-com__compute .t-com__list .t-file__price {
+.c-com .t-com__compute .t-com__list .t-file ~ .price {
   font-size: 1.125rem;
   font-weight: 700;
 }

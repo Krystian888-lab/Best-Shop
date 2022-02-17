@@ -271,43 +271,44 @@
 
 
  <!-- calc -->
- <section class="calc">
-  <h2>Calculate how much you’ll pay</h2>
-  <div class="calc__columns">
+ <section class="c-com o-container">
+  <h2 class="u-text-center">Calculate how much you’ll pay</h2>
+  <div class="c-com__catalog">
 
    <!-- formularz -->
-   <form class="calc__form">
+   <form class="c-com__form">
 
-    <div class="calc__input">
-     <input type="number" class="form__input" id="products" min="1" step="1" placeholder="Products quantity" />
+    <div class="c-com__input">
+     <input type="number" 
+     class="form__input" id="products" min="1" step="1" placeholder="Products quantity" />
     </div>  
 
-    <div class="calc__input">
-     <input type="number" class="form__input" id="orders" min="1" step="1" placeholder="Estimated orders in month" />
+    <div class="c-com__input">
+     <input type="number" 
+     class="form__input" id="orders" min="1" step="1" placeholder="Estimated orders in month" />
     </div>
 
-    <div class="calc__select" id="package" data-value="">
-     <div class="select__input">
+    <div class="c-com__select" id="package" data-value="">
+     <div class="c-set select">
+      <!-- <div class="select__input"></div> -->
       Choose package
      </div>
 
-     <ul class="drop-down__menu">
+     <ul class="c-drop-down__menu">
       <li data-value="basic">Basic</li>
       <li data-value="professional">Professional</li>
       <li data-value="premium">Premium</li>
      </ul>
     </div>
 
-    <label class="form__checkbox">
+    <label class="c-form__checkbox--agreement">
      <input type="checkbox" id="accounting" />
-     <span class="checkbox"></span>
-     <p class="consent__text">Accounting</p>
+     <p class="c-form__checkbox--text">Accounting</p>
     </label>
     
-    <label class="form__checkbox">
+    <label class="c-form__checkbox--agreement">
      <input type="checkbox" id="terminal" />
-     <span class="checkbox"></span>
-     <p class="consent__text">Rental of a payment terminal</p>
+     <p class="c-form__checkbox--text">Rental of a payment terminal</p>
     </label>
    </form>
 
@@ -318,31 +319,31 @@
     <ul>
 
      <li class="t-com__list" data-id="products">
-      <a class="t-file__name">Products</a>
-      <a class="t-file__multi">20 * $0.5</a>
-      <a class="t-file__price">$10</a>
+      <a class="t-file name">Products</a>
+      <a class="t-file multi">20 * $0.5</a>
+      <a class="t-file price">$10</a>
      </li>
 
      <li class="t-com__list" data-id="orders">
-      <a class="t-file__name">Orders</a>
-      <a class="t-file__multi">20 * $0.5</a>
-      <a class="t-file__price">$10</a>
+      <a class="t-file name">Orders</a>
+      <a class="t-file multi">20 * $0.5</a>
+      <a class="t-file price">$10</a>
      </li>
 
      <li class="t-com__list" data-id="package">
-      <a class="t-file__name">Package</a>
-      <a class="t-file__multi">Premium</a>
-      <a class="t-file__price">$10</a>
+      <a class="t-file name">Package</a>
+      <a class="t-file multi">Premium</a>
+      <a class="t-file price">$10</a>
      </li>
 
      <li class="t-com__list" data-id="accounting">
-      <a class="t-file__name">Accounting</a>
-      <a class="t-file__price">$10</a>
+      <a class="t-file name">Accounting</a>
+      <a class="t-file price">$10</a>
      </1li>
 
      <li class="t-com__list" data-id="terminal">
-      <a class="t-file__name">Terminal</a>
-      <a class="t-file__price">$10</a>
+      <a class="t-file name">Terminal</a>
+      <a class="t-file price">$10</a>
      </li>
 
     </ul>

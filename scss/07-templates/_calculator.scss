@@ -1,4 +1,4 @@
-.calc {
+.c-com {
  background-color: $color-grey-light;
  padding: 80px 0;
 
@@ -6,11 +6,11 @@
   padding: 30px 15px;
  }
 
- h2 {
-  text-align: center;
- }
+ // h2 {
+ //  text-align: center;
+ // }
 
- &__columns {
+ &__catalog {
   display: flex;
   max-width: 865px;
   margin: 50px auto 0;
@@ -31,8 +31,10 @@
  }
 
 
- &__input input,
- &__select .select__input {
+ &__input 
+ input,
+ &__select 
+ .c-set.select {
   background-color: $color-white;
   border: 1px solid $color-blue;
   border-radius: 6px;
@@ -56,7 +58,7 @@
  &__select {
   position: relative;
 
-  .select__input {
+  .c-set.select {
    cursor: pointer;
    height: 40px;
    padding: 13px 20px;
@@ -75,10 +77,10 @@
    }
   }
 
-  .drop-down__menu {
-   background-color: white;
+  .c-drop-down__menu {
+   background-color: $color-white;
    border: 1px solid $color-red;
-   border-radius: 6px;
+   border-radius: $border-radius7;
    display: none;
    overflow: hidden;
    position: absolute;
@@ -87,7 +89,7 @@
 
    li {
     cursor: pointer;
-    font-size: 13px;
+    font-size: $font-size-9;
     padding: 10px 20px;
 
     &:hover {
@@ -98,19 +100,13 @@
 
 
   &.open {
-   .select__input::after {
+   .c-set ~ .select::after {
     transform: rotate(180deg);
    }
 
-   .drop-down__menu {
+   .c-drop-down__menu {
     display: block;
    }
-  }
- }
-
- .form__checkbox {
-  .consent__text {
-   padding-top: 4px;
   }
  }
 
@@ -160,11 +156,10 @@
    padding: 6px 20px;
 
    
-   .t-file {
-    &__price {
+   .t-file ~ .price {
      font-size: 1.125rem;
      font-weight: 700;
-    }
+    
    }
   }
  }

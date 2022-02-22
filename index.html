@@ -271,30 +271,30 @@
 
 
  <!-- calc -->
- <section class="c-com o-container">
+ <section class="t-com o-container">
   <h2 class="u-text-center">Calculate how much you’ll pay</h2>
-  <div class="c-com__catalog">
+  <div class="t-com__catalog">
 
    <!-- formularz -->
-   <form class="c-com__form">
+   <form class="t-com__construct">
 
-    <div class="c-com__input">
+    <div class="t-com__field">
      <input type="number" 
-     class="form__input" id="products" min="1" step="1" placeholder="Products quantity" />
+     class="t-com__input" id="products" min="1" step="1" placeholder="Products quantity" />
     </div>  
 
-    <div class="c-com__input">
+    <div class="t-com__field">
      <input type="number" 
-     class="form__input" id="orders" min="1" step="1" placeholder="Estimated orders in month" />
+     class="t-com__input" id="orders" min="1" step="1" placeholder="Estimated orders in month" />
     </div>
 
-    <div class="c-com__select" id="package" data-value="">
-     <div class="c-set select">
+    <div class="t-com__select" id="package" data-value="">
+     <div class="t-set select">
       <!-- <div class="select__input"></div> -->
       Choose package
      </div>
 
-     <ul class="c-drop-down__menu">
+     <ul class="t-com__select menu-explication">
       <li data-value="basic">Basic</li>
       <li data-value="professional">Professional</li>
       <li data-value="premium">Premium</li>
@@ -308,7 +308,8 @@
     
     <label class="c-form__checkbox--agreement">
      <input type="checkbox" id="terminal" />
-     <p class="c-form__checkbox--text">Rental of a payment terminal</p>
+     <p class="c-form__checkbox--text">Rental of a payment terminal
+     </p>
     </label>
    </form>
 
@@ -318,37 +319,37 @@
     <!-- <div class="calc__summary"> -->
     <ul>
 
-     <li class="t-com__list" data-id="products">
+     <li class="t-com list" data-id="products">
       <a class="t-file name">Products</a>
       <a class="t-file multi">20 * $0.5</a>
       <a class="t-file price">$10</a>
      </li>
 
-     <li class="t-com__list" data-id="orders">
+     <li class="t-com list" data-id="orders">
       <a class="t-file name">Orders</a>
       <a class="t-file multi">20 * $0.5</a>
       <a class="t-file price">$10</a>
      </li>
 
-     <li class="t-com__list" data-id="package">
+     <li class="t-com list" data-id="package">
       <a class="t-file name">Package</a>
       <a class="t-file multi">Premium</a>
       <a class="t-file price">$10</a>
      </li>
 
-     <li class="t-com__list" data-id="accounting">
+     <li class="t-com list" data-id="accounting">
       <a class="t-file name">Accounting</a>
       <a class="t-file price">$10</a>
      </1li>
 
-     <li class="t-com__list" data-id="terminal">
+     <li class="t-com list" data-id="terminal">
       <a class="t-file name">Terminal</a>
       <a class="t-file price">$10</a>
      </li>
 
     </ul>
 
-    <div class="t-com__closing" id="total-price">
+    <div class="t-com__total" id="total-price">
      <span>Total</span>
      <span class="t-com__final-price">$700</span>
     </div>

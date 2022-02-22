@@ -909,36 +909,37 @@ h2 {
   margin-top: 19px;
 }
 
-.c-com {
+.t-com {
   background-color: #F7F7F7;
   padding: 80px 0;
 }
 @media (max-width: 1024px) {
-  .c-com {
+  .t-com {
     padding: 30px 15px;
   }
 }
-.c-com__catalog {
+.t-com__catalog {
   display: flex;
-  max-width: 865px;
   margin: 50px auto 0;
+  max-width: 865px;
 }
 @media (max-width: 1024px) {
-  .c-com__catalog {
+  .t-com__catalog {
     display: block;
   }
 }
-.c-com__form {
+.t-com__construct {
   margin-right: 20px;
   width: 50%;
 }
 @media (max-width: 1024px) {
-  .c-com__form {
+  .t-com__construct {
     margin-right: 0;
     width: 100%;
   }
 }
-.c-com__input input, .c-com__select .c-set.select {
+.t-com__input,
+.t-com .t-set.select {
   background-color: #FFFFFF;
   border: 1px solid #08A6E4;
   border-radius: 6px;
@@ -950,26 +951,26 @@ h2 {
   padding: 11px 20px;
   width: 100%;
 }
-.c-com__input input::-moz-placeholder {
+.t-com__input::-moz-placeholder {
   color: #A5A5A5;
 }
-.c-com__input input:-ms-input-placeholder {
+.t-com__input:-ms-input-placeholder {
   color: #A5A5A5;
 }
-.c-com__input input::placeholder {
+.t-com__input::placeholder {
   color: #A5A5A5;
 }
-.c-com__select {
+.t-com__select {
   position: relative;
 }
-.c-com__select .c-set.select {
+.t-com__select .t-set.select {
   cursor: pointer;
   height: 40px;
   padding: 13px 20px;
   position: relative;
   vertical-align: middle;
 }
-.c-com__select .c-set.select::after {
+.t-com__select .t-set.select::after {
   content: "";
   background-image: url("../assets/Arrow.svg");
   display: block;
@@ -979,7 +980,7 @@ h2 {
   top: 9px;
   width: 22px;
 }
-.c-com__select .c-drop-down__menu {
+.t-com__select .menu-explication {
   background-color: #FFFFFF;
   border: 1px solid #FB3B64;
   border-radius: 6px;
@@ -989,35 +990,35 @@ h2 {
   width: 100%;
   z-index: 1;
 }
-.c-com__select .c-drop-down__menu li {
+.t-com__select .menu-explication li {
   cursor: pointer;
   font-size: 0.8125rem;
   padding: 10px 20px;
 }
-.c-com__select .c-drop-down__menu li:hover {
+.t-com__select .menu-explication li:hover {
   background-color: #F7F7F7;
 }
-.c-com__select.open .c-set ~ .select::after {
-  transform: rotate(180deg);
-}
-.c-com__select.open .c-drop-down__menu {
+.t-com__select.open .menu-explication {
   display: block;
 }
-.c-com .t-com__compute {
+.t-com__select.open .t-set.select::after {
+  transform: rotate(180deg);
+}
+.t-com__compute {
   display: flex;
   flex-direction: column;
   margin-left: 20px;
   width: 50%;
 }
 @media (max-width: 1024px) {
-  .c-com .t-com__compute {
+  .t-com__compute {
     margin-left: 0;
     margin-top: 30px;
     width: 100%;
   }
 }
-.c-com .t-com__compute .t-com__closing,
-.c-com .t-com__compute .t-com__list {
+.t-com__compute .t-com__total,
+.t-com__compute .t-com.list {
   align-items: center;
   border-radius: 6px;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
@@ -1026,27 +1027,27 @@ h2 {
   font-size: 0.875rem;
   justify-content: space-between;
 }
-.c-com .t-com__compute .t-com__closing.open,
-.c-com .t-com__compute .t-com__list.open {
+.t-com__compute .t-com__total.open,
+.t-com__compute .t-com.list.open {
   display: flex;
 }
-.c-com .t-com__compute .t-com__closing {
+.t-com__compute .t-com__total {
   align-self: flex-end;
   background-color: #08A6E4;
   margin-top: 22px;
   padding: 8px 20px;
   width: 50%;
 }
-.c-com .t-com__compute .t-com__closing .t-com__final-price {
+.t-com__compute .t-com__total .t-com__final-price {
   font-size: 1.25rem;
   font-weight: 700;
 }
-.c-com .t-com__compute .t-com__list {
+.t-com__compute .t-com.list {
   background-color: #55DFB4;
   margin-bottom: 8px;
   padding: 6px 20px;
 }
-.c-com .t-com__compute .t-com__list .t-file ~ .price {
+.t-com__compute .t-com.list .t-file ~ .price {
   font-size: 1.125rem;
   font-weight: 700;
 }

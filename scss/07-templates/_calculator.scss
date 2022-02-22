@@ -1,4 +1,4 @@
-.c-com {
+.t-com {
  background-color: $color-grey-light;
  padding: 80px 0;
 
@@ -6,21 +6,17 @@
   padding: 30px 15px;
  }
 
- // h2 {
- //  text-align: center;
- // }
-
  &__catalog {
   display: flex;
-  max-width: 865px;
   margin: 50px auto 0;
+  max-width: 865px;
 
   @include tablet {
    display: block;
   }
  }
 
- &__form {
+ &__construct {
   margin-right: 20px;
   width: 50%;
 
@@ -30,11 +26,8 @@
   }
  }
 
-
- &__input 
- input,
- &__select 
- .c-set.select {
+ &__input,
+ .t-set.select {
   background-color: $color-white;
   border: 1px solid $color-blue;
   border-radius: 6px;
@@ -46,19 +39,15 @@
   padding: 11px 20px;
   width: 100%;
  }
-
- &__input {
-  input {
-   &::placeholder {
+ 
+ &__input::placeholder {
     color: $color-grey;
-   }
-  }
  }
 
  &__select {
   position: relative;
 
-  .c-set.select {
+  .t-set.select {
    cursor: pointer;
    height: 40px;
    padding: 13px 20px;
@@ -77,7 +66,7 @@
    }
   }
 
-  .c-drop-down__menu {
+  .menu-explication {
    background-color: $color-white;
    border: 1px solid $color-red;
    border-radius: $border-radius7;
@@ -98,19 +87,18 @@
    }
   }
 
-
   &.open {
-   .c-set ~ .select::after {
-    transform: rotate(180deg);
-   }
-
-   .c-drop-down__menu {
+   
+   .menu-explication {
     display: block;
+   }
+   .t-set.select::after {
+    transform: rotate(180deg);
    }
   }
  }
 
- .t-com__compute {
+ &__compute {
   display: flex;
   flex-direction: column;
   margin-left: 20px;
@@ -122,8 +110,8 @@
    width: 100%;
   }
 
-  .t-com__closing,
-  .t-com__list {
+  .t-com__total,
+  .t-com.list {
    align-items: center;
    border-radius: 6px;
    box-shadow: 0px 3px 6px rgba(0, 0, 0, .16);
@@ -137,7 +125,7 @@
    }
   }
 
-  .t-com__closing {
+  .t-com__total {
    align-self: flex-end;
    background-color: $color-blue;
    margin-top: 22px;
@@ -150,16 +138,14 @@
    }
   }
 
-  .t-com__list {
+  .t-com.list {
    background-color: $color-green;
    margin-bottom: 8px;
    padding: 6px 20px;
-
    
    .t-file ~ .price {
      font-size: 1.125rem;
      font-weight: 700;
-    
    }
   }
  }

@@ -1,4 +1,4 @@
-function Calculator ( form, summary ) {
+function Calculator( form, summary ) {
  this.prices = {
   products: 0.5,
   orders: 0.25,
@@ -28,10 +28,10 @@ function Calculator ( form, summary ) {
   },
  };
  this.addEvents();
-};
+}
 
 //6.Dodanie wydarzeń - bardzo ważny element 
-Calculator.prototype.addEvents = function () {
+Calculator.prototype.addEvents = function() {
  this.form.products.addEventListener( "change", this.inputEvent.bind( this ) );
  this.form.products.addEventListener( "keyup", this.inputEvent.bind( this ) );
  this.form.orders.addEventListener( "change", this.inputEvent.bind( this ) );
@@ -44,9 +44,9 @@ Calculator.prototype.addEvents = function () {
 }
 
 //7.Aktualizacja sumy
-Calculator.prototype.updateTotal = function() {
+Calculator.prototype.updateTotal = function () {
  const show = this.summary.list.querySelectorAll( ".open" ).length > 0;
-
+ 
  if ( show ) {
   const productsSum = this.form.products.value < 0
   ? 0
@@ -70,9 +70,10 @@ Calculator.prototype.updateTotal = function() {
 
   this.summary.total.price.innerText = `\$${ productsSum + ordersSum + packagePrice + accounting + terminal }`;
 
-  this.summary.total.container.classList.add( "open" );
+  this.summary.total.container.classList.add( "open" )
  } else {
-  this.summary.total.container.classList.remove( "open" );
+  this.summary.total.container.classList.remove( "open" )
+
  }
 }
 

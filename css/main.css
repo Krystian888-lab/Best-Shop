@@ -380,13 +380,14 @@ h2 {
 }
 
 .o-container {
-  width: 1352px;
   margin: 0 auto;
+  max-width: 1352px;
+  width: 100%;
 }
 @media (max-width: 1352px) {
   .o-container {
-    width: 100%;
     padding: 0 15px;
+    width: 100%;
   }
 }
 
@@ -497,9 +498,9 @@ h2 {
 }
 .c-form__checkbox--text {
   align-self: center;
-  font-size: 0.75rem;
   color: #A5A5A5;
-  line-height: 17px;
+  font-size: 0.75rem;
+  line-height: 1.0725;
 }
 
 .c-logo {
@@ -530,7 +531,7 @@ h2 {
   align-items: flex-end;
   background-color: #FFFFFF;
   border: 1px solid #E8E9ED;
-  border-radius: 5px;
+  border-radius: 6px;
   display: flex;
   justify-content: space-between;
   margin-bottom: 37px;
@@ -672,7 +673,7 @@ h2 {
 .t-advantages__aside--trumpet .t-advantages__picture {
   align-items: center;
   background-color: var(--accent-color);
-  border-radius: 5px;
+  border-radius: 6px;
   display: flex;
   justify-content: center;
   height: 370px;
@@ -946,7 +947,7 @@ h2 {
   box-shadow: 0px 3px 6px #07ACE629;
   color: #A5A5A5;
   font-size: 0.8125rem;
-  line-height: 1em;
+  line-height: 1.16875;
   margin-bottom: 20px;
   padding: 11px 20px;
   width: 100%;
@@ -992,7 +993,7 @@ h2 {
 }
 .t-com__select .menu-explication li {
   cursor: pointer;
-  font-size: 0.8125rem;
+  font-size: 0.75rem;
   padding: 10px 20px;
 }
 .t-com__select .menu-explication li:hover {
@@ -1021,7 +1022,7 @@ h2 {
 .t-com__compute .t-com.list {
   align-items: center;
   border-radius: 6px;
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 3px 6px #00000029;
   color: #FFFFFF;
   display: none;
   font-size: 0.875rem;
@@ -1048,7 +1049,7 @@ h2 {
   padding: 6px 20px;
 }
 .t-com__compute .t-com.list .t-file ~ .price {
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   font-weight: 700;
 }
 
@@ -1139,7 +1140,7 @@ h2 {
 }
 
 .t-footer {
-  box-shadow: 0 -5px 40px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 -5px 40px #00000029;
   padding: 20px;
 }
 .t-footer__site {
@@ -1194,7 +1195,7 @@ h2 {
 .t-header .t-nav__link {
   border-bottom: 4px solid transparent;
   color: #A5A5A5;
-  font-size: 0.825rem;
+  font-size: 0.6875rem;
   font-weight: 700;
   letter-spacing: 3.28px;
   padding: 28px 18px 22px;
@@ -1351,7 +1352,7 @@ h2 {
   }
 }
 .t-pricing__packet--professional .t-pricing__set {
-  font-size: 1.3125rem;
+  font-size: 1.25rem;
 }
 .t-pricing__packet--professional .t-pricing__unit {
   margin-bottom: 25px;
@@ -1371,7 +1372,7 @@ h2 {
 }
 .t-pricing__set {
   font-family: "Raleway", sans-serif;
-  font-size: 1.25rem;
+  font-size: 2rem;
   font-weight: 700;
 }
 .t-pricing__cost {

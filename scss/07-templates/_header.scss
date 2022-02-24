@@ -23,7 +23,7 @@
   &__link {
    border-bottom: 4px solid transparent;
    color: $color-grey;
-   font-size: $font-size-7* 1.1;
+   font-size: $font-size-10;
    font-weight: 700;
    letter-spacing: $letter-spacing-primary;
    padding: 28px 18px 22px;
@@ -75,12 +75,12 @@
      }
 
      ~.t-menu__toggle {
-      transform: rotate(90deg);
+      transform: rotate( 90deg );
 
       .t-menu__line {
 
        &:nth-child(1) {
-        transform: translateY(15px) rotate(45deg);
+        transform: translateY( 15px ) rotate( 45deg );
         transform-origin: right;
         width: 35px;
        }
@@ -93,7 +93,7 @@
 
        &:nth-child(3) {
         transform-origin: right;
-        transform: translateY(-15px) rotate(-45deg);
+        transform: translateY( -15px ) rotate( -45deg );
         width: 35px;
        }
       }

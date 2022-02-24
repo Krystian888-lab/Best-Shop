@@ -48,12 +48,12 @@
      height: 180px;
      position: absolute;
      right: 0;
-     transform: rotate(45deg);
+     transform: rotate( 45deg );
      top: -40px;
      width: 180px;
      transition-timing-function: ease-out;
      transition-duration: 250ms;
-     transform: rotate(45deg);
+     transform: rotate( 45deg );
      transition-delay: 0.04s;
     
      @include tablet {
@@ -193,9 +193,6 @@
      }
     }
    }
-   // &--content {
-   //  max-width: none;
-   // }
   }
   
   &__text {

@@ -14,29 +14,29 @@
  
  &--icon {
   padding: 26px 157px;
-  background: linear-gradient($color-blue-fresh, $color-blue);
+  background: linear-gradient( $color-blue-fresh, $color-blue );
  }
  
  &--icon:hover {
-  background: linear-gradient($color-blue, $color-blue-fresh);
+  background: linear-gradient( $color-blue, $color-blue-fresh );
  }
  
  &--form {
   align-self: flex-end;
-  background: linear-gradient($color-blue-fresh, $color-blue);
+  background: linear-gradient( $color-blue-fresh, $color-blue );
   font-size: 13px;
   padding: 20px 97px;
  }
 
  &--form:hover {
-  background: linear-gradient($color-blue, $color-blue-fresh);
+  background: linear-gradient( $color-blue, $color-blue-fresh );
  }
 }
 
  .t-pricing__packet .c-btn { 
  background-color: var( --accent-color );
  bottom: -25px;
- font-size: $font-size-9;
+ font-size: $font-size-8;
  position: relative;
 
 }

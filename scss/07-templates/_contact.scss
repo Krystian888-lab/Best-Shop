@@ -1,8 +1,6 @@
 .t-contact {
  display: flex;
  justify-content: space-around;
- // max-width: 896px;
- // width: 100%;
  padding: 80px 100px 100px;
 
  @include tablet {
@@ -23,7 +21,6 @@
  &__title {
   font-size: $font-size-1;
   padding-bottom: 22px;
-  // line-height: $line-height-lg;
  }
 
  &__text {

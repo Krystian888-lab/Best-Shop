@@ -1,5 +1,5 @@
 .t-footer {
- box-shadow: 0 -5px 40px rgba(0, 0, 0, .16);
+ box-shadow: 0 -5px 40px $color-dark-shadow;
  padding: 20px;
  
  
@@ -19,7 +19,7 @@
 
  &__copy {
   color: $color-grey;
-  font-size: $font-size-10;
+  font-size: $font-size-10;// 11px
   line-height: $line-height-average;
   margin-top: 6px;
  }

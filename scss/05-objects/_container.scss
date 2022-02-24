@@ -1,10 +1,11 @@
 .o-container {
- width: 1352px;
  margin: 0 auto;
+ max-width: 1352px;
+ width: 100%;
 
  @include notebook {
-  width: 100%;
   padding: 0 15px;
+  width: 100%;
  }
 }
 

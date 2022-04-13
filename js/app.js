@@ -95,7 +95,7 @@ class Calculator {
   const singlePrice = this.prices[id];
   const totalPrice = value * singlePrice;
 
-  this.updateSummary(id, `${value} * \$${singlePrice}`, totalPrice, function (item, calc, total) {
+  this.updateSummary(id, `${value} * \$${singlePrice}`, totalPrice, (item, calc, total) => {
    if (value < 0) {
     calc.innerHTML = null;
     total.innerText = "Value should be greater than 0";
@@ -105,7 +105,6 @@ class Calculator {
     item.classList.remove("open");
    }
   });
-
   this.updateTotal();
  }
  //4. Obsługa niestandardowego selecta
@@ -116,16 +115,17 @@ class Calculator {
    ? el.target.dataset.value
    : "";
 
-  const text = typeof el.target.dataset.text !== "undefined"
-   ? ""
+  const text = typeof el.target.dataset.value !== "undefined"
+   ? "Choose package"
    : el.target.innerText;
 
   if (value.length > 0) {
    this.form.package.dataset.value = value;
-   this.form.package.querySelector(".select").innerText = text + " - Selection";
+   this.form.package.querySelector(".select").innerText = text;
+
    this.updateSummary("package", text, this.prices.package[value]);
    this.updateTotal();
-  };
+  }
  }
  //5. Obsługa checkboxow
  checkboxEvent(el) {
@@ -143,17 +143,10 @@ class Calculator {
  }
 }
 
-
-
-
-
-
-
-
 // Wywołanie
-document.addEventListener("DOMContentLoaded", function () {
- const form = document.querySelector(".t-com__construct");
- const summary = document.querySelector(".t-com__compute");
+document.addEventListener( "DOMContentLoaded", function() {
+ const form = document.querySelector( ".t-com__construct" );
+ const summary = document.querySelector( ".t-com__compute" );
 
- new Calculator(form, summary);
-})
+ new Calculator( form, summary )
+} )

@@ -22,9 +22,9 @@ The project will be a **website** composed of three lejalts prepared in Adobe XD
 ## Screenshots
 
 ![Header](./assets/page_header.png)
-![Responsive web design](./assets/page_header_rwd.png)
 ![Section Advantages](./assets/section_advantages.png)
 ![Section Calculator](./assets/compute_app.png)
 ![Contact](./assets/section_contact.png)
+![Responsive web design](./assets/page_header_rwd.png)
 
 ## Technologies Used

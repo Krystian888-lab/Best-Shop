@@ -88,8 +88,8 @@ To-do list:
 
 ## Acknowledgements
 
-- This design was delineated by the schema 
-https://xd.adobe.com/view/31804ad0-5f57-46e0-6edf-a5f54c37078a-47b1/grid/
+- This design was delineated by the schema https://xd.adobe.com/view/31804ad0-5f57-46e0-6edf-a5f54c37078a-47b1/grid/
+- Thanks for the tips 'hamburger' from "https://codepen.io/RRoberts/pen/ZBYaJr"
 - This project was inspired by "Warsztaty tworzenia stron internetowych" on https://platforma.strefakursow.pl/
 - Many thanks to lecturer Ksawery Kargól from "strefakursow.pl"
 

@@ -57,7 +57,7 @@ Correct enter this directory via terminal / console and enter the command:
 ### `npm install`
 
 In the project directory, you can run:
-### `npm gulp`
+### `gulp`
 
 Runs the app in the development mode.
 .<br />
